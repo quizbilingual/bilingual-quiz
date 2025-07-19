@@ -1,0 +1,2244 @@
+[
+  {
+    "id": 1,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "மனித உடலில் மிக நீளமான எலும்பு எது?",
+    "options": ["முலை எலும்பு", "மண்டையோட்டு", "தொண்டை எலும்பு", "தொடை எலும்பு"],
+    "answer": "தொடை எலும்பு"
+  },
+  {
+    "id": 2,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "easy",
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Perth", "Canberra"],
+    "answer": "Canberra"
+  },
+  {
+    "id": 3,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "இந்தியாவின் முதல் குடியரசுத் தலைவர் யார்?",
+    "options": ["நேரு", "ராஜேந்திர பிரசாத்", "அப்துல் கலாம்", "சர்வபல்லி ராதாகிருஷ்ணன்"],
+    "answer": "ராஜேந்திர பிரசாத்"
+  },
+  {
+    "id": 4,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "What gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "answer": "Carbon dioxide"
+  },
+  {
+    "id": 5,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "பெருங்கடல் நீரின் சராசரி உவர்த்தன்மை எவ்வளவு?",
+    "options": ["3%", "3.5%", "4%", "2.5%"],
+    "answer": "3.5%"
+  },
+  {
+    "id": 6,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "easy",
+    "question": "Which Indian freedom fighter is known as 'Iron Man of India'?",
+    "options": ["Subhash Chandra Bose", "Sardar Vallabhbhai Patel", "Mahatma Gandhi", "Jawaharlal Nehru"],
+    "answer": "Sardar Vallabhbhai Patel"
+  },
+  {
+    "id": 7,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "கண்ணின் வண்ணத்தை நிர்ணயிக்கும் பகுதி எது?",
+    "options": ["கணப்பிம்பம்", "நேத்திரம்", "அயரிஸ்", "அர்ப்பம்"],
+    "answer": "அயரிஸ்"
+  },
+  {
+    "id": 8,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "Which country has the largest number of islands?",
+    "options": ["Indonesia", "Canada", "Sweden", "Philippines"],
+    "answer": "Sweden"
+  },
+  {
+    "id": 9,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "hard",
+    "question": "சங்ககாலத்தில் 'கடல்' என அறியப்பட்ட இடம் எது?",
+    "options": ["சேரர் நாடு", "மலைய நாடு", "பாலைய நாடு", "நீற்ற நாடு"],
+    "answer": "சேரர் நாடு"
+  },
+  {
+    "id": 10,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "What is H2O commonly known as?",
+    "options": ["Oxygen", "Hydrogen", "Salt", "Water"],
+    "answer": "Water"
+  },
+  
+  {
+    "id": 11,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "What gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 12,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "தமிழ்நாட்டின் முதன்மை மொழி எது?",
+    "options": ["ஆங்கிலம்", "மலையாளம்", "தெலுங்கு", "தமிழ்"],
+    "answer": "தமிழ்"
+  },
+  {
+    "id": 13,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "Who invented the World Wide Web?",
+    "options": ["Tim Berners-Lee", "Steve Jobs", "Bill Gates", "Mark Zuckerberg"],
+    "answer": "Tim Berners-Lee"
+  },
+  {
+    "id": 14,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "சூரியன் ஒரு ______?",
+    "options": ["நிலா", "பூமி", "நட்சத்திரம்", "கோள்"],
+    "answer": "நட்சத்திரம்"
+  },
+  {
+    "id": 15,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "Who was the first woman Chief Minister of Tamil Nadu?",
+    "options": ["Jayalalithaa", "Indira Gandhi", "Janaki Ramachandran", "Sasikala"],
+    "answer": "Janaki Ramachandran"
+  },
+  {
+    "id": 16,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "medium",
+    "question": "இந்தியாவின் தேசிய கொடி எத்தனை வண்ணங்கள் கொண்டது?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3"
+  },
+  {
+    "id": 17,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "hard",
+    "question": "What part of the plant conducts photosynthesis?",
+    "options": ["Root", "Stem", "Leaf", "Flower"],
+    "answer": "Leaf"
+  },
+  {
+    "id": 18,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "hard",
+    "question": "தமிழ்நாட்டின் தற்போதைய சட்டமன்றம் எத்தனை உறுப்பினர்களைக் கொண்டுள்ளது?",
+    "options": ["234", "245", "230", "220"],
+    "answer": "234"
+  },
+  {
+    "id": 19,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "easy",
+    "question": "What is the capital city of India?",
+    "options": ["Mumbai", "Delhi", "Chennai", "Kolkata"],
+    "answer": "Delhi"
+  },
+  {
+    "id": 20,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "மனித உடலில் இரத்தத்தை பம்ப் செய்பவன் எது?",
+    "options": ["கால்", "மூளை", "மார்பு", "இதயம்"],
+    "answer": "இதயம்"
+  },
+  
+  {
+    "id": 21,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "What is the boiling point of water in Celsius?",
+    "options": ["100°C", "90°C", "120°C", "80°C"],
+    "answer": "100°C"
+  },
+  {
+    "id": 22,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "easy",
+    "question": "இந்தியாவின் தேசிய விலங்கு எது?",
+    "options": ["சிங்கம்", "யானை", "புலி", "மான்"],
+    "answer": "புலி"
+  },
+  {
+    "id": 23,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "When was the Indian Constitution adopted?",
+    "options": ["15 August 1947", "26 January 1950", "2 October 1948", "26 November 1949"],
+    "answer": "26 November 1949"
+  },
+  {
+    "id": 24,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "நாம் சுவை உணர எதை பயன்படுத்துகிறோம்?",
+    "options": ["நாக்கு", "காது", "மூக்கு", "கை"],
+    "answer": "நாக்கு"
+  },
+  {
+    "id": 25,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "Which is the longest river in the world?",
+    "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "id": 26,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "தமிழ்நாட்டின் தலைநகரம் எது?",
+    "options": ["சென்னை", "மதுரை", "கோயம்புத்தூர்", "திருச்சி"],
+    "answer": "சென்னை"
+  },
+  {
+    "id": 27,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "Which part of the body helps us to see?",
+    "options": ["Ears", "Eyes", "Nose", "Tongue"],
+    "answer": "Eyes"
+  },
+  {
+    "id": 28,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "முதல் இந்திய பிரதமர் யார்?",
+    "options": ["இந்திரா காந்தி", "மோடி", "நேரு", "காந்தி"],
+    "answer": "நேரு"
+  },
+  {
+    "id": 29,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "hard",
+    "question": "Who wrote 'Thirukkural'?",
+    "options": ["Kambar", "Avvaiyar", "Thiruvalluvar", "Ilango Adigal"],
+    "answer": "Thiruvalluvar"
+  },
+  {
+    "id": 30,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "hard",
+    "question": "மின்னோட்டம் செல்கின்ற வழியை என்ன என்கிறோம்?",
+    "options": ["மின்னொளி", "மின்னோட்டம்", "மின்சுற்று", "மின் ஒலி"],
+    "answer": "மின்சுற்று"
+  },
+  
+  {
+    "id": 31,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "easy",
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Jupiter", "Venus"],
+    "answer": "Mars"
+  },
+  {
+    "id": 32,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "நாம் சுவைக்க எது உதவுகிறது?",
+    "options": ["மூக்கு", "நாக்கு", "காது", "கைகள்"],
+    "answer": "நாக்கு"
+  },
+  {
+    "id": 33,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "What is the official language of Tamil Nadu?",
+    "options": ["Hindi", "Telugu", "Tamil", "English"],
+    "answer": "Tamil"
+  },
+  {
+    "id": 34,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "medium",
+    "question": "மத்திய அரசின் தலைமை தலமாகும் நகரம் எது?",
+    "options": ["மும்பை", "சென்னை", "கொல்கத்தா", "நьюடெல்லி"],
+    "answer": "நьюடெல்லி"
+  },
+  {
+    "id": 35,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "What gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 36,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "hard",
+    "question": "தமிழ் நூல்களில் 'பொன்னியின் செல்வன்' என்ற புதினத்தை எழுதியவர் யார்?",
+    "options": ["பாரதி", "கல்கி", "சிலப்பதிகாரம்", "இளங்கோ அடிகள்"],
+    "answer": "கல்கி"
+  },
+  {
+    "id": 37,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "Which is the smallest continent by land area?",
+    "options": ["Europe", "Antarctica", "Australia", "South America"],
+    "answer": "Australia"
+  },
+  {
+    "id": 38,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "உடலில் உள்ள எது இரத்தத்தை துடைக்கிறது?",
+    "options": ["மூளை", "மார்பு", "இதயம்", "வயிறு"],
+    "answer": "இதயம்"
+  },
+  {
+    "id": 39,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "easy",
+    "question": "Which state is known as the 'Land of Temples'?",
+    "options": ["Kerala", "Andhra Pradesh", "Tamil Nadu", "Karnataka"],
+    "answer": "Tamil Nadu"
+  },
+  {
+    "id": 40,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "இந்தியாவில் அதிக மக்கள் தொகை கொண்ட மாநிலம் எது?",
+    "options": ["பீகார்", "உத்தரபிரதேசம்", "மகாராஷ்டிரா", "மத்தியப்பிரதேசம்"],
+    "answer": "உத்தரபிரதேசம்"
+  },
+  {
+    "id": 41,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "Which sense organ helps us smell things?",
+    "options": ["Eyes", "Ears", "Nose", "Skin"],
+    "answer": "Nose"
+  },
+  {
+    "id": 42,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "திருக்குறள் நூலை எழுதியவர் யார்?",
+    "options": ["அவ்வையார்", "திருவள்ளுவர்", "இளங்கோ", "கம்பர்"],
+    "answer": "திருவள்ளுவர்"
+  },
+  {
+    "id": 43,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "easy",
+    "question": "Who is known as the Father of the Nation in India?",
+    "options": ["Nehru", "Sardar Patel", "Mahatma Gandhi", "Rajaji"],
+    "answer": "Mahatma Gandhi"
+  },
+  {
+    "id": 44,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "hard",
+    "question": "மின்சாரத்தை அளக்கும் கருவி எது?",
+    "options": ["அமீட்டர்", "வோல்ட்மீட்டர்", "மீட்டர்", "மிக்ரோமீட்டர்"],
+    "answer": "அமீட்டர்"
+  },
+  {
+    "id": 45,
+    "lang": "en",
+    "subject": "tnpsc",
+    "difficulty": "hard",
+    "question": "Who was the first woman Chief Minister of Tamil Nadu?",
+    "options": ["Jayalalithaa", "Indira Gandhi", "Janaki Ramachandran", "K. Kamaraj"],
+    "answer": "Janaki Ramachandran"
+  },
+  {
+    "id": 46,
+    "lang": "ta",
+    "subject": "gk",
+    "difficulty": "medium",
+    "question": "பசுமை புரட்சி என்றால் என்ன?",
+    "options": ["மின்சார மேம்பாடு", "உணவுப்பொருள் உற்பத்தி மேம்பாடு", "சாலை மேம்பாடு", "அரசியல் மாற்றம்"],
+    "answer": "உணவுப்பொருள் உற்பத்தி மேம்பாடு"
+  },
+  {
+    "id": 47,
+    "lang": "en",
+    "subject": "science",
+    "difficulty": "medium",
+    "question": "What is the chemical formula of water?",
+    "options": ["H2O", "O2", "CO2", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "id": 48,
+    "lang": "ta",
+    "subject": "tnpsc",
+    "difficulty": "medium",
+    "question": "தமிழ்நாட்டின் முதல்வர் யார் (2024 வரை)?",
+    "options": ["ஜெயலலிதா", "மோடி", "ஸ்டாலின்", "கருணாநிதி"],
+    "answer": "ஸ்டாலின்"
+  },
+  {
+    "id": 49,
+    "lang": "en",
+    "subject": "gk",
+    "difficulty": "hard",
+    "question": "Which Indian city is known as the 'City of Joy'?",
+    "options": ["Mumbai", "Kolkata", "Delhi", "Bangalore"],
+    "answer": "Kolkata"
+  },
+  {
+    "id": 50,
+    "lang": "ta",
+    "subject": "science",
+    "difficulty": "easy",
+    "question": "நாம் பார்க்க எதை பயன்படுத்துகிறோம்?",
+    "options": ["மூக்கு", "காது", "நாக்கு", "கண்"],
+    "answer": "கண்"
+  },
+  {
+  "id": 51,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "What is the capital of Australia?",
+  "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+  "answer": "Canberra"
+},
+{
+  "id": 52,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the chemical symbol for Gold?",
+  "options": ["Ag", "Au", "Gd", "Go"],
+  "answer": "Au"
+},
+{
+  "id": 53,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "Who is the Chief Minister of Tamil Nadu (2024)?",
+  "options": ["Edappadi K. Palaniswami", "O. Panneerselvam", "M.K. Stalin", "Annamalai"],
+  "answer": "M.K. Stalin"
+},
+{
+  "id": 54,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which particle has a negative charge?",
+  "options": ["Proton", "Neutron", "Electron", "Positron"],
+  "answer": "Electron"
+},
+{
+  "id": 55,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய பறவை எது?",
+  "options": ["காகம்", "மயில்", "புறா", "நரிக்குருவி"],
+  "answer": "மயில்"
+},
+{
+  "id": 56,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which is the largest continent in the world?",
+  "options": ["Africa", "Asia", "Europe", "North America"],
+  "answer": "Asia"
+},
+{
+  "id": 57,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "மனித உடலில் இரத்தத்தை தூண்டும் உறுப்பு எது?",
+  "options": ["மூளை", "இருதயம்", "கல்லீரல்", "மூட்டு"],
+  "answer": "இருதயம்"
+},
+{
+  "id": 58,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Who invented the World Wide Web?",
+  "options": ["Tim Berners-Lee", "Bill Gates", "Steve Jobs", "Larry Page"],
+  "answer": "Tim Berners-Lee"
+},
+{
+  "id": 59,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "தஞ்சாவூரை அடிப்படையாகக் கொண்டு இசை வாழ்ந்த மன்னன் யார்?",
+  "options": ["மார்த்தாண்ட வர்மா", "ராஜ ராஜ சோழன்", "ராஜா செரவாஜி", "சேரமான் பெருமாள்"],
+  "answer": "ராஜா செரவாஜி"
+},
+{
+  "id": 60,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which gas is most abundant in Earth’s atmosphere?",
+  "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+  "answer": "Nitrogen"
+},
+{
+  "id": 61,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "குடியரசுத் தலைவர் இந்தியாவில் எந்த ஆண்டு முதல் இருந்தார்?",
+  "options": ["1947", "1950", "1952", "1949"],
+  "answer": "1950"
+},
+{
+  "id": 62,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which is the smallest prime number?",
+  "options": ["1", "2", "3", "5"],
+  "answer": "2"
+},
+{
+  "id": 63,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What is H2O commonly known as?",
+  "options": ["Salt", "Acid", "Water", "Hydrogen Peroxide"],
+  "answer": "Water"
+},
+{
+  "id": 64,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "மனிதனின் எத்தனை எலும்புகள் உள்ளன?",
+  "options": ["206", "210", "208", "200"],
+  "answer": "206"
+},
+{
+  "id": 65,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "அகில இந்திய ரேடியோ எப்போது தொடங்கப்பட்டது?",
+  "options": ["1927", "1930", "1940", "1950"],
+  "answer": "1927"
+},
+{
+  "id": 66,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which river flows through Tamil Nadu?",
+  "options": ["Godavari", "Krishna", "Cauvery", "Narmada"],
+  "answer": "Cauvery"
+},
+{
+  "id": 67,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவில் முதல் ஐ.டி. நகர் எது?",
+  "options": ["பங்களூர்", "சென்னை", "புனே", "ஹைதராபாத்"],
+  "answer": "பங்களூர்"
+},
+{
+  "id": 68,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "What is the powerhouse of the cell?",
+  "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+  "answer": "Mitochondria"
+},
+{
+  "id": 69,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Who was the first woman Prime Minister of India?",
+  "options": ["Sonia Gandhi", "Sarojini Naidu", "Indira Gandhi", "Meira Kumar"],
+  "answer": "Indira Gandhi"
+},
+{
+  "id": 70,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "தமிழகத்தில் அதிக இடைவெளியில் மழைபெறும் மாவட்டம் எது?",
+  "options": ["சென்னை", "நீலகிரி", "ராமநாதபுரம்", "திருநெல்வேலி"],
+  "answer": "ராமநாதபுரம்"
+},
+{
+  "id": 71,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which gas is used by plants during photosynthesis?",
+  "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+  "answer": "Carbon Dioxide"
+},
+{
+  "id": 72,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழ்நாட்டின் தலைநகர் என்ன?",
+  "options": ["சென்னை", "மதுரை", "திருச்சி", "கோவை"],
+  "answer": "சென்னை"
+},
+{
+  "id": 73,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Who was the first woman Prime Minister of India?",
+  "options": ["Sarojini Naidu", "Indira Gandhi", "Sushma Swaraj", "Pratibha Patil"],
+  "answer": "Indira Gandhi"
+},
+{
+  "id": 74,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நம்மை சுற்றியுள்ள காற்றில் அதிகமாக உள்ள வாயு எது?",
+  "options": ["ஆக்ஸிஜன்", "நைட்ரஜன்", "கார்பன் டையாக்சைடு", "ஹைட்ரஜன்"],
+  "answer": "நைட்ரஜன்"
+},
+{
+  "id": 75,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "When was the Constitution of India adopted?",
+  "options": ["15th August 1947", "26th January 1950", "2nd October 1948", "26th November 1949"],
+  "answer": "26th November 1949"
+},
+{
+  "id": 76,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய பறவை எது?",
+  "options": ["கழுகு", "நரம்பு", "மயில்", "காகம்"],
+  "answer": "மயில்"
+},
+{
+  "id": 77,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which part of the brain controls balance and coordination?",
+  "options": ["Cerebrum", "Cerebellum", "Medulla", "Pons"],
+  "answer": "Cerebellum"
+},
+{
+  "id": 78,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "நீலகிரி மலைச்சரிவுகளில் யாரின் ஆட்சி இருந்தது?",
+  "options": ["சேரர்", "சோழர்", "பண்டைய கோங்கர்கள்", "மூவர்"],
+  "answer": "பண்டைய கோங்கர்கள்"
+},
+{
+  "id": 79,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which continent is known as the Dark Continent?",
+  "options": ["Asia", "Africa", "Europe", "Australia"],
+  "answer": "Africa"
+},
+{
+  "id": 80,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "சூரியன் ஒரு ________?",
+  "options": ["பூமி", "நட்சத்திரம்", "சந்திரன்", "குறும்புள்"],
+  "answer": "நட்சத்திரம்"
+},
+{
+  "id": 81,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "What is the total number of districts in Tamil Nadu (as of 2024)?",
+  "options": ["32", "38", "37", "39"],
+  "answer": "38"
+},
+{
+  "id": 82,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவின் முதல் குடியரசுத் தலைவர் யார்?",
+  "options": ["ஜவகர்லால் நேரு", "மகாத்மா காந்தி", "டாக்டர் ராஜேந்திர பிரசாத்", "சர்வபல்லி ராதாகிருஷ்ணன்"],
+  "answer": "டாக்டர் ராஜேந்திர பிரசாத்"
+},
+{
+  "id": 83,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What organ pumps blood through the human body?",
+  "options": ["Lungs", "Brain", "Heart", "Liver"],
+  "answer": "Heart"
+},
+{
+  "id": 84,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "அறிஞர் அண்ணாவின் பிறந்த நாள் எப்போது?",
+  "options": ["15 ஜூலை", "15 ஜூன்", "15 ஆகஸ்ட்", "15 ஜனவரி"],
+  "answer": "15 செப்டம்பர்"
+},
+{
+  "id": 85,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "What is the capital of Australia?",
+  "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+  "answer": "Canberra"
+},
+{
+  "id": 86,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "பரிணாம கோட்பாட்டை முன்வைத்தவர் யார்?",
+  "options": ["ஆயின்ஸ்டைன்", "டார்வின்", "நியூட்டன்", "கலிலியோ"],
+  "answer": "டார்வின்"
+},
+{
+  "id": 87,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who was the founder of Justice Party?",
+  "options": ["Periyar", "C. Natesa Mudaliar", "E.V. Ramasamy", "Annie Besant"],
+  "answer": "C. Natesa Mudaliar"
+},
+{
+  "id": 88,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய விலங்கு எது?",
+  "options": ["சிங்கம்", "யானை", "புலி", "மான்"],
+  "answer": "புலி"
+},
+{
+  "id": 89,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the hardest natural substance on Earth?",
+  "options": ["Gold", "Iron", "Diamond", "Quartz"],
+  "answer": "Diamond"
+},
+{
+  "id": 90,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "சங்க இலக்கியத்தில் குறிப்பிடப்படும் ‘பெரியார்’ எவர்?",
+  "options": ["பேரரசர்", "மகாதேவன்", "கடல் கடந்து சென்றவர்", "தற்காலிக வீரன்"],
+  "answer": "பேரரசர்"
+},
+{
+  "id": 91,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which Indian state has the longest coastline?",
+  "options": ["Tamil Nadu", "Andhra Pradesh", "Gujarat", "Maharashtra"],
+  "answer": "Gujarat"
+},
+{
+  "id": 92,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "நீரை தானாக ஈர்க்கும் பொருளை என்ன என்று அழைக்கப்படுகிறது?",
+  "options": ["கதிர்வீச்சு", "ஒளிர்வு", "இரசாயனம்", "ஹைட்ரோஸ்கோபிக்"],
+  "answer": "ஹைட்ரோஸ்கோபிக்"
+},
+{
+  "id": 93,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "Which act introduced Diarchy in the provinces of British India?",
+  "options": ["Indian Councils Act 1909", "Government of India Act 1919", "Charter Act 1833", "Regulating Act 1773"],
+  "answer": "Government of India Act 1919"
+},
+{
+  "id": 94,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "பிரிட்டிஷ் இந்தியாவின் முதல் நியமிக்கப்பட்ட ஆளுநராக இருந்தவர் யார்?",
+  "options": ["லார்டு கான்வாலிஸ்", "லார்டு வெல்லஸ்லி", "லார்டு கிளைவ்", "லார்டு வாரன் ஹஸ்டிங்ஸ்"],
+  "answer": "லார்டு வாரன் ஹஸ்டிங்ஸ்"
+},
+{
+  "id": 95,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "Which gas is essential for human respiration?",
+  "options": ["Nitrogen", "Carbon dioxide", "Oxygen", "Hydrogen"],
+  "answer": "Oxygen"
+},
+{
+  "id": 96,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "நியூட்டனின் மூன்றாவது இயக்கச்சட்டம் என்ன?",
+  "options": [
+    "ஒவ்வொரு செயற்கும் சமமான எதிர்செயல் உண்டு",
+    "ஒரு பொருள் அமைதியிலோ நேர்த்தியிலோ இருக்கும்",
+    "விகிதம் நேர்த்திக்கு நேரானது",
+    "நேர்த்தி ஈர்ப்பு விசைக்கு சமம்"
+  ],
+  "answer": "ஒவ்வொரு செயற்கும் சமமான எதிர்செயல் உண்டு"
+},
+{
+  "id": 97,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "In which year did India become a Republic?",
+  "options": ["1947", "1950", "1948", "1952"],
+  "answer": "1950"
+},
+{
+  "id": 98,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "பாரதி எப்பொழுது பொய்கை சிறையில் அடைக்கப்பட்டார்?",
+  "options": ["1905", "1917", "1920", "1912"],
+  "answer": "1917"
+},
+{
+  "id": 99,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the boiling point of water in Celsius?",
+  "options": ["90°C", "100°C", "120°C", "80°C"],
+  "answer": "100°C"
+},
+{
+  "id": 100,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசியப்பறவை எது?",
+  "options": ["கழுகு", "பூநாரை", "நத்தைக்கோழி", "நிலாமை"],
+  "answer": "நத்தைக்கோழி"
+},
+{
+  "id": 101,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which Tamil King sent an embassy to the Roman emperor Augustus?",
+  "options": ["Karikala Chola", "Nedunjeliyan", "Kopperuncholan", "Pandya"],
+  "answer": "Karikala Chola"
+},
+{
+  "id": 102,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "மின்னோட்டத்திற்கு எதிராகச் செயல்படுவது எது?",
+  "options": ["தோண்டர்", "ஒளி", "மின்னழுத்தம்", "மின்தடை"],
+  "answer": "மின்தடை"
+},
+{
+  "id": 103,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which is the largest organ in the human body?",
+  "options": ["Heart", "Liver", "Lungs", "Skin"],
+  "answer": "Skin"
+},
+{
+  "id": 104,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "சிலப்பதிகாரம் நூலை எழுதியவர் யார்?",
+  "options": ["இளங்கோ அடிகள்", "திருவள்ளுவர்", "ஐயனார்", "திருநாவுக்கரசர்"],
+  "answer": "இளங்கோ அடிகள்"
+},
+{
+  "id": 105,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "Which organ is responsible for pumping blood?",
+  "options": ["Lungs", "Heart", "Liver", "Kidney"],
+  "answer": "Heart"
+},
+{
+  "id": 106,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "தாவரங்களில் உள்ள பசுமை நிறமானது எதனால் உண்டாகிறது?",
+  "options": ["கார்பன்", "நைட்ரஜன்", "குளோரோபிளாஸ்ட்", "புளோரின்"],
+  "answer": "குளோரோபிளாஸ்ட்"
+},
+{
+  "id": 107,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which Indian city is known as the 'Silicon Valley of India'?",
+  "options": ["Hyderabad", "Pune", "Bengaluru", "Chennai"],
+  "answer": "Bengaluru"
+},
+{
+  "id": 108,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "தமிழ்நாட்டில் உள்ள பெரிய நதியானது எது?",
+  "options": ["வைகை", "தாமிரபரணி", "காவிரி", "பாலாறு"],
+  "answer": "காவிரி"
+},
+{
+  "id": 109,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "Which Tamil epic is considered a twin of Silappatikaram?",
+  "options": ["Manimekalai", "Purananuru", "Tirukkural", "Pathupattu"],
+  "answer": "Manimekalai"
+},
+{
+  "id": 110,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "தமிழ் நாடு முதலமைச்சராக முதல் பெண் யார்?",
+  "options": ["இந்திரா காந்தி", "ஜெயலலிதா", "விஜயலட்சுமி பண்டிட்", "ஜானகி ராமச்சந்திரன்"],
+  "answer": "ஜானகி ராமச்சந்திரன்"
+},
+{
+  "id": 110,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Who was the first woman Prime Minister of India?",
+  "options": ["Sonia Gandhi", "Indira Gandhi", "Pratibha Patil", "Sarojini Naidu"],
+  "answer": "Indira Gandhi"
+},
+{
+  "id": 111,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "நம் உடலில் உள்ள ரத்தத்தை வடிகட்டும் உறுப்புகள் எவை?",
+  "options": ["இதயம்", "அகளை", "சிறுநீரகம்", "மூளை"],
+  "answer": "சிறுநீரகம்"
+},
+{
+  "id": 112,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "What is the powerhouse of the cell?",
+  "options": ["Ribosome", "Nucleus", "Mitochondria", "Golgi body"],
+  "answer": "Mitochondria"
+},
+{
+  "id": 113,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "திராவிட இயக்கத்தின் நிறுவனர் யார்?",
+  "options": ["மாரி", "பெரியார்", "சிவாஜி", "அண்ணா"],
+  "answer": "பெரியார்"
+},
+{
+  "id": 114,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "In which year did the Quit India Movement start?",
+  "options": ["1940", "1942", "1939", "1945"],
+  "answer": "1942"
+},
+{
+  "id": 115,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவில் அதிக அளவில் கோயில்கள் உள்ள மாநிலம் எது?",
+  "options": ["கர்நாடகம்", "மகாராஷ்டிரா", "தமிழ்நாடு", "ஆந்திரா"],
+  "answer": "தமிழ்நாடு"
+},
+{
+  "id": 116,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the boiling point of water at sea level?",
+  "options": ["90°C", "100°C", "120°C", "80°C"],
+  "answer": "100°C"
+},
+{
+  "id": 117,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "மின்சாரம் ஓடுவதற்கான வழி என்ன?",
+  "options": ["துணி", "தங்கம்", "கல்", "காகிதம்"],
+  "answer": "தங்கம்"
+},
+{
+  "id": 118,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which state is called the 'Land of Five Rivers'?",
+  "options": ["Punjab", "Rajasthan", "Gujarat", "Assam"],
+  "answer": "Punjab"
+},
+{
+  "id": 119,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "அரிசி உற்பத்தியில் இந்தியாவில் முதல் மாநிலம் எது?",
+  "options": ["தமிழ்நாடு", "மகாராஷ்டிரா", "மேற்கு வங்காளம்", "உத்தரப்பிரதேசம்"],
+  "answer": "மேற்கு வங்காளம்"
+},
+{
+  "id": 120,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which gas is most abundant in Earth's atmosphere?",
+  "options": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon dioxide"],
+  "answer": "Nitrogen"
+},
+{
+  "id": 121,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய ஆறு எது?",
+  "options": ["கங்கை", "காவிரி", "யமுனை", "நர்மதா"],
+  "answer": "கங்கை"
+},
+{
+  "id": 122,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who wrote the book 'Discovery of India'?",
+  "options": ["Gandhi", "Nehru", "Tagore", "Patel"],
+  "answer": "Nehru"
+},
+{
+  "id": 123,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நம் உடலில் உள்ள எரிதணுக்கள் எங்கு உருவாகின்றன?",
+  "options": ["மூளை", "மூட்டு", "எலும்பு மெழுகு", "இதயம்"],
+  "answer": "எலும்பு மெழுகு"
+},
+{
+  "id": 124,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "What is the capital of Argentina?",
+  "options": ["Santiago", "Rio de Janeiro", "Buenos Aires", "Lima"],
+  "answer": "Buenos Aires"
+},
+{
+  "id": 125,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழ் நாடு மாநிலத்தின் தலைநகரம் எது?",
+  "options": ["மதுரை", "சென்னை", "திருச்சி", "கோயம்புத்தூர்"],
+  "answer": "சென்னை"
+},
+{
+  "id": 126,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What planet is known as the Red Planet?",
+  "options": ["Mars", "Venus", "Saturn", "Jupiter"],
+  "answer": "Mars"
+},
+{
+  "id": 127,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "இந்தியாவின் முதல் மகளிர் குடியரசுத் தலைவர் யார்?",
+  "options": ["மீரா குமாரி", "இந்திரா", "சோனியா", "பிரதிபா பாட்டீல்"],
+  "answer": "பிரதிபா பாட்டீல்"
+},
+{
+  "id": 128,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "The term 'Dyarchy' was introduced in India by which Act?",
+  "options": ["Act of 1909", "Act of 1919", "Act of 1935", "Act of 1947"],
+  "answer": "Act of 1919"
+},
+{
+  "id": 129,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "ஊசல் இயக்கம் எந்த வகை இயக்கம்?",
+  "options": ["வட்ட இயக்கம்", "வீச்சி இயக்கம்", "நேரியல் இயக்கம்", "முழுமையாக்கம்"],
+  "answer": "வீச்சி இயக்கம்"
+},
+{
+  "id": 130,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Who is known as the 'Missile Man of India'?",
+  "options": ["Vikram Sarabhai", "Raman", "APJ Abdul Kalam", "Narayana Murthy"],
+  "answer": "APJ Abdul Kalam"
+},
+{
+  "id": 131,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய விலங்கு எது?",
+  "options": ["சிங்கம்", "புலி", "மான்", "நரி"],
+  "answer": "புலி"
+},
+{
+  "id": 132,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which vitamin is produced by sunlight in human body?",
+  "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+  "answer": "Vitamin D"
+},
+{
+  "id": 133,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "சங்க காலத்தில் பாணர் யார்?",
+  "options": ["மன்னர்", "பாடகர்", "போராளி", "பணியாளர்"],
+  "answer": "பாடகர்"
+},
+{
+  "id": 134,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which country invented paper?",
+  "options": ["India", "China", "Greece", "Egypt"],
+  "answer": "China"
+},
+{
+  "id": 135,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "சூரியனின் மைய வெப்பம் எவ்வளவு?",
+  "options": ["15 லட்சம்°C", "10 லட்சம்°C", "5 லட்சம்°C", "1 லட்சம்°C"],
+  "answer": "15 லட்சம்°C"
+},
+{
+  "id": 136,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which Tamil King was known for his naval power?",
+  "options": ["Rajendra Chola I", "Ashoka", "Harsha", "Raja Raja Chola"],
+  "answer": "Rajendra Chola I"
+},
+{
+  "id": 137,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவின் முதலாவது விண்வெளி மனிதர் யார்?",
+  "options": ["விக்ரம்", "அப்துல்கலாம்", "ரகேஷ் ஷர்மா", "சேதுராமன்"],
+  "answer": "ரகேஷ் ஷர்மா"
+},
+{
+  "id": 138,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which blood group is universal donor?",
+  "options": ["A+", "O-", "AB+", "B-"],
+  "answer": "O-"
+},
+{
+  "id": 139,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "இந்திய விடுதலை நாள் எப்போது?",
+  "options": ["ஆகஸ்ட் 15", "ஜூலை 4", "ஜூன் 5", "அக் 2"],
+  "answer": "ஆகஸ்ட் 15"
+},
+{
+  "id": 140,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "What is the capital of India?",
+  "options": ["Mumbai", "Delhi", "Chennai", "Kolkata"],
+  "answer": "Delhi"
+},
+{
+  "id": 151,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழகத்தின் முதன்மை குற்ற விசாரணை அதிகாரி யார்?",
+  "options": ["முதல்வர்", "அரசு செயலர்", "பொது குற்றப்புலனாய்வாளர்", "மாவட்ட ஆட்சியர்"],
+  "answer": "பொது குற்றப்புலனாய்வாளர்"
+},
+{
+  "id": 152,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Who was the first Indian to win a Nobel Prize?",
+  "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
+  "answer": "Rabindranath Tagore"
+},
+{
+  "id": 153,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What is H2O commonly known as?",
+  "options": ["Hydrogen", "Water", "Oxygen", "Salt"],
+  "answer": "Water"
+},
+{
+  "id": 154,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "முதல் பனிக்கட்டப் படகுப் பயணம் செய்தவர் யார்?",
+  "options": ["நீல் ஆர்ம்ஸ்ட்ராங்", "அமுந்தன்", "ரொல்டு அமுன்ட்சன்", "கொலம்பஸ்"],
+  "answer": "ரொல்டு அமுன்ட்சன்"
+},
+{
+  "id": 155,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which article of the Constitution deals with the Emergency Provisions?",
+  "options": ["Article 356", "Article 370", "Article 352", "Article 395"],
+  "answer": "Article 352"
+},
+{
+  "id": 156,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "மனித உடலில் அதிகமாகக் காணப்படும் தாது எது?",
+  "options": ["துத்தநாகம்", "இரும்பு", "கால்சியம்", "பாஸ்பரஸ்"],
+  "answer": "கால்சியம்"
+},
+{
+  "id": 157,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which is the tallest mountain in the world?",
+  "options": ["Mount Everest", "K2", "Kanchenjunga", "Makalu"],
+  "answer": "Mount Everest"
+},
+{
+  "id": 158,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which vitamin is produced when the skin is exposed to sunlight?",
+  "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+  "answer": "Vitamin D"
+},
+{
+  "id": 159,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "இந்திய குடியரசுத் தலைவர் பதவிக்காலம் எத்தனை ஆண்டுகள்?",
+  "options": ["3", "4", "5", "6"],
+  "answer": "5"
+},
+{
+  "id": 160,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Who is known as the Father of the Indian Constitution?",
+  "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "B.R. Ambedkar", "Rajendra Prasad"],
+  "answer": "B.R. Ambedkar"
+},
+{
+  "id": 161,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which gas do plants absorb from the atmosphere?",
+  "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+  "answer": "Carbon Dioxide"
+},
+{
+  "id": 162,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "தமிழகத்தில் உள்ள ஒரே யுரேனியம் சுரங்கம் எது?",
+  "options": ["குடநாடு", "சேலம்", "மதுரை", "புதுக்கோட்டை"],
+  "answer": "சேலம்"
+},
+{
+  "id": 163,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "In which year was the first general election held in India?",
+  "options": ["1947", "1950", "1951", "1952"],
+  "answer": "1951"
+},
+{
+  "id": 164,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "மின்காந்த அலைகள் வேகமாகப் பரவும் ஊடகம் என்ன?",
+  "options": ["வாயு", "தூசி", "வெற்று இடம்", "நீர்"],
+  "answer": "வெற்று இடம்"
+},
+{
+  "id": 165,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which Indian city is called the Pink City?",
+  "options": ["Delhi", "Udaipur", "Jaipur", "Jodhpur"],
+  "answer": "Jaipur"
+},
+{
+  "id": 166,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which organ in the human body is responsible for filtering blood?",
+  "options": ["Liver", "Heart", "Kidneys", "Lungs"],
+  "answer": "Kidneys"
+},
+{
+  "id": 167,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "அரசாங்கத்தின் மூன்று கிளைகள் என்ன?",
+  "options": ["சட்டம், நீதிமன்றம், பொது", "சட்டம், நிர்வாகம், நீதிமன்றம்", "நிர்வாகம், சமூக சேவை, காவல்", "சட்டம், தேர்தல், பொருளாதாரம்"],
+  "answer": "சட்டம், நிர்வாகம், நீதிமன்றம்"
+},
+{
+  "id": 168,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "What is the capital of Canada?",
+  "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+  "answer": "Ottawa"
+},
+{
+  "id": 169,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "தாவரங்களில் உணவுத் தயாரிக்கும் செயல் எதன் மூலம் நடைபெறுகிறது?",
+  "options": ["கிளோரோபிளாஸ்ட்", "மையக் கரு", "மயிரிழை", "மியாடோகாண்ட்ரியா"],
+  "answer": "கிளோரோபிளாஸ்ட்"
+},
+{
+  "id": 170,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "What does TNPSC stand for?",
+  "options": ["Tamil Nadu Public Service Commission", "Tamil Nadu Private Service Commission", "Tamil Nadu Police Selection Committee", "Tamil Nadu Public Safety Council"],
+  "answer": "Tamil Nadu Public Service Commission"
+},
+{ "id": 181, "lang": "ta", "subject": "tnpsc", "difficulty": "easy", "question": "இந்தியாவின் முதல் குடியரசுத் தலைவர் யார்?", "options": ["ராஜேந்திர பிரசாத்", "அப்துல் கலாம்", "சர்வேப்பல்லி ராதாகிருஷ்ணன்", "நேரு"], "answer": "ராஜேந்திர பிரசாத்" },
+{ "id": 182, "lang": "en", "subject": "science", "difficulty": "medium", "question": "What is the SI unit of Force?", "options": ["Joule", "Pascal", "Newton", "Watt"], "answer": "Newton" },
+{ "id": 183, "lang": "en", "subject": "gk", "difficulty": "hard", "question": "Which is the smallest bone in the human body?", "options": ["Stapes", "Femur", "Ulna", "Tibia"], "answer": "Stapes" },
+{ "id": 184, "lang": "ta", "subject": "science", "difficulty": "medium", "question": "பொதுவாக கண்ணாடி ஒரு _____ ஆகும்.", "options": ["திடம்", "திரவம்", "வாயு", "புழுதி"], "answer": "திடம்" },
+{ "id": 185, "lang": "en", "subject": "tnpsc", "difficulty": "easy", "question": "Which Indian state has the largest coastline?", "options": ["Tamil Nadu", "Gujarat", "Andhra Pradesh", "Maharashtra"], "answer": "Gujarat" },
+{ "id": 186, "lang": "en", "subject": "gk", "difficulty": "medium", "question": "When was the Battle of Plassey fought?", "options": ["1757", "1857", "1761", "1748"], "answer": "1757" },
+{ "id": 187, "lang": "ta", "subject": "gk", "difficulty": "easy", "question": "இந்தியாவில் எத்தனை மாநிலங்கள் உள்ளன?", "options": ["28", "29", "30", "27"], "answer": "28" },
+{ "id": 188, "lang": "en", "subject": "science", "difficulty": "medium", "question": "What part of the cell contains genetic material?", "options": ["Mitochondria", "Nucleus", "Cytoplasm", "Ribosome"], "answer": "Nucleus" },
+{ "id": 189, "lang": "ta", "subject": "science", "difficulty": "hard", "question": "எலக்ட்ரான் ஒரு ____ சார்பு கொண்டது.", "options": ["தலைவனாக", "தனிமமாக", "எதிர்சார்பு", "நேர்சார்பு"], "answer": "எதிர்சார்பு" },
+{ "id": 190, "lang": "en", "subject": "gk", "difficulty": "easy", "question": "What is the capital of Canada?", "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"], "answer": ",Ottawa" },
+{ "id": 191, "lang": "ta", "subject": "tnpsc", "difficulty": "medium", "question": "தமிழகத்தின் முதலமைச்சராக உள்ளவர் யார்?", "options": ["ஸ்டாலின்", "எடப்பாடி பழனிசாமி", "ஜெயலலிதா", "வைகோ"], "answer": "ஸ்டாலின்" },
+{ "id": 192, "lang": "en", "subject": "science", "difficulty": "easy", "question": "Which organ purifies our blood?", "options": ["Lungs", "Heart", "Kidney", "Liver"], "answer": "Kidney" },
+{ "id": 193, "lang": "ta", "subject": "gk", "difficulty": "medium", "question": "அறிவியல் நாள் எப்போது கொண்டாடப்படுகிறது?", "options": ["ஜூலை 15", "ஏப்ரல் 22", "பிப்ரவரி 28", "மார்ச் 8"], "answer": "பிப்ரவரி 28" },
+{ "id": 194, "lang": "en", "subject": "tnpsc", "difficulty": "hard", "question": "Who was the founder of the Chola Empire?", "options": ["Karikala Chola", "Rajendra Chola", "Vijayalaya Chola", "Rajaraja Chola"], "answer": "Vijayalaya Chola" },
+{ "id": 195, "lang": "en", "subject": "science", "difficulty": "medium", "question": "Which vitamin is known as Ascorbic acid?", "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"], "answer": "Vitamin C" },
+{ "id": 196, "lang": "ta", "subject": "science", "difficulty": "easy", "question": "மனித உடலில் இரத்தத்தை ஒட்டச் செய்யும் கூறு?", "options": ["ரெட் பிளட்ஸெல்", "பிளேட்லெட்ஸ்", "வயிட் பிளட்ஸெல்", "ஹீமோகுளோபின்"], "answer": "பிளேட்லெட்ஸ்" },
+{ "id": 197, "lang": "en", "subject": "gk", "difficulty": "easy", "question": "Which currency is used in Japan?", "options": ["Yuan", "Dollar", "Yen", "Won"], "answer": "Yen" },
+{ "id": 198, "lang": "ta", "subject": "gk", "difficulty": "hard", "question": "மகாகவி பாரதியார் பிறந்த ஆண்டு எது?", "options": ["1880", "1882", "1885", "1879"], "answer": "1882" },
+{ "id": 199, "lang": "en", "subject": "tnpsc", "difficulty": "medium", "question": "What is the term length of the Chief Minister in Tamil Nadu?", "options": ["4 years", "5 years", "6 years", "No limit"], "answer": "5 years" },
+{ "id": 200, "lang": "ta", "subject": "tnpsc", "difficulty": "easy", "question": "தமிழ்நாட்டின் தலைநகரம் எது?", "options": ["திருச்சி", "மதுரை", "சென்னை", "இராமேஸ்வரம்"], "answer": "சென்னை" },
+{
+  "id": 201,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் முதல் குடியரசுத் தலைவர் யார்?",
+  "options": ["ராஜேந்திர பிரசாத்", "ஜவாஹர்லால் நேரு", "சுபாஷ் சந்திரபோஸ்", "அம்பேத்கர்"],
+  "answer": "ராஜேந்திர பிரசாத்"
+},
+{
+  "id": 202,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the chemical symbol for Sodium?",
+  "options": ["Na", "So", "S", "Sn"],
+  "answer": "Na"
+},
+{
+  "id": 203,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which country hosted the first modern Olympic Games?",
+  "options": ["France", "USA", "Greece", "UK"],
+  "answer": "Greece"
+},
+{
+  "id": 204,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நீரின் மூலக்கூறு வாய்ப்பாடு என்ன?",
+  "options": ["H2O", "CO2", "O2", "H2SO4"],
+  "answer": "H2O"
+},
+{
+  "id": 205,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "Which day is celebrated as Tamil Nadu Formation Day?",
+  "options": ["November 1", "August 15", "January 26", "October 2"],
+  "answer": "November 1"
+},
+{
+  "id": 206,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய விலங்கு எது?",
+  "options": ["சிங்கம்", "புலி", "யானை", "சிறுத்தை"],
+  "answer": "புலி"
+},
+{
+  "id": 207,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "What part of the cell contains the genetic material?",
+  "options": ["Cytoplasm", "Nucleus", "Cell wall", "Ribosome"],
+  "answer": "Nucleus"
+},
+{
+  "id": 208,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "திருக்குறளை எழுதியவர் யார்?",
+  "options": ["வள்ளுவர்", "கம்பன்", "அவ்வையார்", "பாரதி"],
+  "answer": "வள்ளுவர்"
+},
+{
+  "id": 209,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which is the largest ocean in the world?",
+  "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+  "answer": "Pacific Ocean"
+},
+{
+  "id": 210,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "சூரியனை சுற்றி பயணிக்கும் கிரகங்கள் என்னவாக அழைக்கப்படுகின்றன?",
+  "options": ["நட்சத்திரங்கள்", "கிரகங்கள்", "உலகங்கள்", "சுழலும் விண்மீன்கள்"],
+  "answer": "கிரகங்கள்"
+},
+{
+  "id": 211,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who was the first woman Chief Minister of Tamil Nadu?",
+  "options": ["Jayalalithaa", "Janaki Ramachandran", "Indira Gandhi", "Sasikala"],
+  "answer": "Janaki Ramachandran"
+},
+{
+  "id": 212,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "இந்தியாவின் தேசியக்கொடியின் நடுவில் உள்ள சக்கரம் என்ன?",
+  "options": ["அசோக சக்கரம்", "சத்ர சக்கரம்", "தேசிய சக்கரம்", "சுழற்சி சக்கரம்"],
+  "answer": "அசோக சக்கரம்"
+},
+{
+  "id": 213,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "Which gas is essential for human respiration?",
+  "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Helium"],
+  "answer": "Oxygen"
+},
+{
+  "id": 214,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "பெரியார் எப்போது பிறந்தார்?",
+  "options": ["1879", "1890", "1880", "1870"],
+  "answer": "1879"
+},
+{
+  "id": 215,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which city is known as the ‘Silicon Valley of India’?",
+  "options": ["Chennai", "Hyderabad", "Pune", "Bangalore"],
+  "answer": "Bangalore"
+},
+{
+  "id": 251,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "தமிழகத்தின் முதல் பெண்கள் முதலமைச்சர் யார்?",
+  "options": ["ஜெயலலிதா", "இந்திரா காந்தி", "அன்னாதுரை", "மாதவி"],
+  "answer": "ஜெயலலிதா"
+},
+{
+  "id": 252,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which country was formerly known as Abyssinia?",
+  "options": ["Ethiopia", "Sudan", "Somalia", "Libya"],
+  "answer": "Ethiopia"
+},
+{
+  "id": 253,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நீர் எத்தனை ஹைட்ரஜன் அணுக்களையும் ஆக்ஸிஜன் அணுக்களையும் கொண்டுள்ளது?",
+  "options": ["2 ஹைட்ரஜன், 1 ஆக்ஸிஜன்", "1 ஹைட்ரஜன், 2 ஆக்ஸிஜன்", "2 ஆக்ஸிஜன்", "1 ஹைட்ரஜன்"],
+  "answer": "2 ஹைட்ரஜன், 1 ஆக்ஸிஜன்"
+},
+{
+  "id": 254,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+  "options": ["Punjab", "Haryana", "Uttar Pradesh", "Rajasthan"],
+  "answer": "Punjab"
+},
+{
+  "id": 255,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "ஓர் அணுவின் மையத்தில் உள்ள தன்மைகள் என்ன?",
+  "options": ["நியூட்ரான்கள் மற்றும் புரோட்டான்கள்", "எலெக்ட்ரான்கள்", "நியூட்ரான்கள்", "புரோட்டான்கள் மற்றும் எலெக்ட்ரான்கள்"],
+  "answer": "நியூட்ரான்கள் மற்றும் புரோட்டான்கள்"
+},
+{
+  "id": 256,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "The Chola dynasty ruled primarily in which part of India?",
+  "options": ["South India", "North India", "West India", "East India"],
+  "answer": "South India"
+},
+{
+  "id": 257,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய பறவை எது?",
+  "options": ["மயில்", "காகம்", "புறா", "குயில்"],
+  "answer": "மயில்"
+},
+{
+  "id": 258,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which vitamin is primarily obtained from sunlight?",
+  "options": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin B12"],
+  "answer": "Vitamin D"
+},
+{
+  "id": 259,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "திராவிட இயக்கத்தின் முக்கிய அடிப்படை என்ன?",
+  "options": ["சமதர்மம்", "மதநம்பிக்கை", "பொது அரசியல்", "மத கலவைகள்"],
+  "answer": "சமதர்மம்"
+},
+{
+  "id": 260,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which is the largest desert in the world?",
+  "options": ["Sahara", "Gobi", "Thar", "Antarctica"],
+  "answer": "Antarctica"
+},
+{
+  "id": 261,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "பூமிக்கு அருகில் உள்ள கிரகங்கள் எவை?",
+  "options": ["வெள்ளி மற்றும் செவ்வாய்", "புதன் மற்றும் சனி", "சனி மற்றும் குரு", "புதன் மற்றும் யுரேனஸ்"],
+  "answer": "வெள்ளி மற்றும் செவ்வாய்"
+},
+{
+  "id": 262,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who founded the Self-Respect Movement?",
+  "options": ["Periyar", "Gandhi", "Nehru", "Ambedkar"],
+  "answer": "Periyar"
+},
+{
+  "id": 263,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவில் முதல் அணுஆயுத சோதனை எங்கு நடந்தது?",
+  "options": ["போக்கரன்", "சென்னைய்", "மும்பை", "செங்கல்பட்டு"],
+  "answer": "போக்கரன்"
+},
+{
+  "id": 264,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the chemical symbol for gold?",
+  "options": ["Au", "Ag", "Gd", "Go"],
+  "answer": "Au"
+},
+{
+  "id": 265,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழக சட்டமன்றம் எங்கு உள்ளது?",
+  "options": ["சென்னை", "திருச்சி", "மதுரை", "சேலம்"],
+  "answer": "சென்னை"
+},
+{
+  "id": 266,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which gas is essential for human respiration?",
+  "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+  "answer": "Oxygen"
+},
+{
+  "id": 267,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "மின்னோட்டம் கடக்கும் போது வெளியேறும் வெப்பத்தை என்னென்று சொல்வார்கள்?",
+  "options": ["ஜூல் வெப்பம்", "விளக்கு வெப்பம்", "காந்த வெப்பம்", "நுண்ணிய வெப்பம்"],
+  "answer": "ஜூல் வெப்பம்"
+},
+{
+  "id": 268,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who was the first Indian to receive the Bharat Ratna award?",
+  "options": ["C. Rajagopalachari", "Nehru", "Gandhi", "Dr. Radhakrishnan"],
+  "answer": "C. Rajagopalachari"
+},
+{
+  "id": 269,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "இந்தியாவின் மிகப்பெரிய மாநிலம் எது?",
+  "options": ["ராஜஸ்தான்", "மகாராஷ்டிரா", "உத்தரபிரதேசம்", "மத்தியப் பிரதேசம்"],
+  "answer": "ராஜஸ்தான்"
+},
+{
+  "id": 270,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What is the boiling point of water at sea level?",
+  "options": ["100°C", "90°C", "80°C", "70°C"],
+  "answer": "100°C"
+},
+{
+  "id": 271,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which is the longest river in the world?",
+  "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+  "answer": "Nile"
+},
+{
+  "id": 272,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழ்நாட்டின் தலைநகரம் எது?",
+  "options": ["சென்னை", "மதுரை", "திருச்சி", "கோயம்புத்தூர்"],
+  "answer": "சென்னை"
+},
+{
+  "id": 273,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the basic unit of life?",
+  "options": ["Organ", "Tissue", "Cell", "Molecule"],
+  "answer": "Cell"
+},
+{
+  "id": 274,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "நியூட்டனின் மூன்றாவது இயக்கச்சட்டம் என்ன?",
+  "options": ["செயலுக்குச் சமமான எதிர்செயல் இருக்கும்", "இயக்கம் நிலை இருக்கும்", "விலகும் பாதை இருக்கும்", "வேகம் இரட்டிப்பு ஆகும்"],
+  "answer": "செயலுக்குச் சமமான எதிர்செயல் இருக்கும்"
+},
+{
+  "id": 275,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "In which year was the Anti-Hindi agitations started in Tamil Nadu?",
+  "options": ["1937", "1965", "1947", "1950"],
+  "answer": "1937"
+},
+{
+  "id": 276,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "இந்தியாவின் தேசியக் கேபிடல் எது?",
+  "options": ["சென்னை", "மும்பை", "புதுடெல்லி", "கொல்கத்தா"],
+  "answer": "புதுடெல்லி"
+},
+{
+  "id": 277,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "Which festival is known as the festival of lights?",
+  "options": ["Holi", "Pongal", "Diwali", "Eid"],
+  "answer": "Diwali"
+},
+{
+  "id": 278,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நீரின் ரசாயன வாய்ப்பு என்ன?",
+  "options": ["H2O", "O2", "CO2", "H2SO4"],
+  "answer": "H2O"
+},
+{
+  "id": 279,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "What gas do plants absorb from the atmosphere?",
+  "options": ["Oxygen", "Hydrogen", "Carbon dioxide", "Nitrogen"],
+  "answer": "Carbon dioxide"
+},
+{
+  "id": 280,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "பெரியார் எப்போது பிறந்தார்?",
+  "options": ["1879", "1882", "1890", "1875"],
+  "answer": "1879"
+},
+{
+  "id": 281,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which movement did Periyar start?",
+  "options": ["Self Respect Movement", "Quit India Movement", "Non-Cooperation", "Swadeshi Movement"],
+  "answer": "Self Respect Movement"
+},
+{
+  "id": 282,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய பறவை எது?",
+  "options": ["மயில்", "காகம்", "நரம்பு", "பருந்து"],
+  "answer": "மயில்"
+},
+{
+  "id": 283,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "What is the powerhouse of the cell?",
+  "options": ["Nucleus", "Chloroplast", "Mitochondria", "Ribosome"],
+  "answer": "Mitochondria"
+},
+{
+  "id": 284,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "மனித உடலில் எத்தனை எலும்புகள் உள்ளன?",
+  "options": ["206", "205", "201", "210"],
+  "answer": "206"
+},
+{
+  "id": 285,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which country gifted the Statue of Liberty to the USA?",
+  "options": ["France", "Germany", "UK", "Italy"],
+  "answer": "France"
+},
+{
+  "id": 286,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "தமிழ்நாட்டின் முதல் முதல்வர் யார்?",
+  "options": ["அண்ணா", "காமராசர்", "பழனிசாமி", "ராஜாஜி"],
+  "answer": "ராஜாஜி"
+},
+{
+  "id": 287,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "Which part of the plant conducts photosynthesis?",
+  "options": ["Stem", "Leaves", "Roots", "Flowers"],
+  "answer": "Leaves"
+},
+{
+  "id": 288,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய விலங்கு எது?",
+  "options": ["சிங்கம்", "புலி", "யானை", "நரி"],
+  "answer": "புலி"
+},
+{
+  "id": 289,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Which Indian city is known as the City of Joy?",
+  "options": ["Mumbai", "Kolkata", "Delhi", "Chennai"],
+  "answer": "Kolkata"
+},
+{
+  "id": 290,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "மூலக்கூறுகளில் எத்தனை வகை ப்ரோட்டான்கள் உள்ளன?",
+  "options": ["இவை தனித்துவமாக மாறுபடும்", "5", "10", "12"],
+  "answer": "இவை தனித்துவமாக மாறுபடும்"
+},
+{
+  "id": 291,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "What is the capital of Australia?",
+  "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+  "answer": "Canberra"
+},
+{
+  "id": 292,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "சுதேசி இயக்கம் எப்போது தொடங்கப்பட்டது?",
+  "options": ["1905", "1919", "1920", "1942"],
+  "answer": "1905"
+},
+{
+  "id": 293,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "Which part of the human body pumps blood?",
+  "options": ["Brain", "Lungs", "Heart", "Liver"],
+  "answer": "Heart"
+},
+{
+  "id": 294,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "மகாத்மா காந்தி பிறந்த தேதி எப்போது?",
+  "options": ["அக் 2", "ஜூலை 15", "நவம்பர் 14", "ஜூன் 5"],
+  "answer": "அக் 2"
+},
+{
+  "id": 295,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "Who was the founder of the Justice Party?",
+  "options": ["Periyar", "T.M. Nair", "Satyamurti", "Kamaraj"],
+  "answer": "T.M. Nair"
+},
+{
+  "id": 296,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "நீர் எந்த தன்மை கொண்டது?",
+  "options": ["தடுப்பான", "சாய்வான", "தாவும்", "முறிவு"],
+  "answer": "தாவும்"
+},
+{
+  "id": 297,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "How many states are there in India?",
+  "options": ["28", "27", "29", "26"],
+  "answer": "28"
+},
+{
+  "id": 298,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "நிறப்பான கண்ணாடி ஒரு உதாரணம் என்ன?",
+  "options": ["திண்மம்", "திரவம்", "வாயு", "ஒளிரும் பொருள்"],
+  "answer": "ஒளிரும் பொருள்"
+},
+{
+  "id": 299,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Which Indian leader is known as the 'Iron Man of India'?",
+  "options": ["Sardar Vallabhbhai Patel", "Nehru", "Gandhi", "Bose"],
+  "answer": "Sardar Vallabhbhai Patel"
+},
+{
+  "id": 300,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய நாளா எது?",
+  "options": ["ஆகஸ்ட் 15", "ஜனவரி 26", "அக் 2", "ஜூலை 4"],
+  "answer": "ஜனவரி 26"
+},
+{
+  "id": 301,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "தமிழ்நாட்டில் முதன்முதலில் மகளிர் கல்லூரி எங்கு தொடங்கப்பட்டது?",
+  "options": ["சென்னை", "மதுரை", "திருச்சி", "கோயம்புத்தூர்"],
+  "answer": "சென்னை"
+},
+{
+  "id": 302,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Which gas is essential for photosynthesis?",
+  "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+  "answer": "Carbon Dioxide"
+},
+{
+  "id": 303,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "நம் உடலில் இரத்தத்தை பம்ப் செய்யும் உறுப்பு எது?",
+  "options": ["மூளை", "கொழுப்பு", "இதயம்", "கல்லீரல்"],
+  "answer": "இதயம்"
+},
+{
+  "id": 304,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "What is the chemical formula of water?",
+  "options": ["H2O", "O2", "CO2", "HCl"],
+  "answer": "H2O"
+},
+{
+  "id": 305,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "இந்தியாவின் முதல் பெண் அதிபர் யார்?",
+  "options": ["சோனியா காந்தி", "சந்திரிகா குமார்", "பிரதிபா படிலே", "சராஜு தேவி"],
+  "answer": "பிரதிபா படிலே"
+},
+{
+  "id": 306,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "Which Indian state is known as the 'Land of Five Rivers'?",
+  "options": ["Punjab", "Haryana", "Bihar", "Odisha"],
+  "answer": "Punjab"
+},
+{
+  "id": 307,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "சூரியன் ஒரு ______?",
+  "options": ["கோள்", "நட்சத்திரம்", "சின்ன கிரகம்", "உலகம்"],
+  "answer": "நட்சத்திரம்"
+},
+{
+  "id": 308,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Who was the first Indian to receive the Bharat Ratna award?",
+  "options": ["C. Rajagopalachari", "Dr. Radhakrishnan", "CV Raman", "Mahatma Gandhi"],
+  "answer": "C. Rajagopalachari"
+},
+{
+  "id": 309,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழகத்தில் முதன்மை அமைச்சர் பதவியை வகித்த முதல் நபர் யார்?",
+  "options": ["அண்ணா", "ஜவஹர்லால் நேரு", "சி. ராஜகோபாலாச்சாரி", "காமராஜர்"],
+  "answer": "சி. ராஜகோபாலாச்சாரி"
+},
+{
+  "id": 310,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "Which part of the brain controls balance and coordination?",
+  "options": ["Cerebrum", "Medulla", "Cerebellum", "Pons"],
+  "answer": "Cerebellum"
+},
+{
+  "id": 311,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "easy",
+  "question": "இந்தியாவின் தேசிய பறவை எது?",
+  "options": ["குயில்", "நரி", "மயில்", "கடா"],
+  "answer": "மயில்"
+},
+{
+  "id": 312,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "medium",
+  "question": "Who founded the Dravidar Kazhagam?",
+  "options": ["Periyar", "Anna", "Karunanidhi", "Jayalalitha"],
+  "answer": "Periyar"
+},
+{
+  "id": 313,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "hard",
+  "question": "நோய்களை தடுக்கும் நம் உடலின் அமைப்பு எது?",
+  "options": ["மூளை", "உடல் சுரப்பிகள்", "நரம்புகள்", "தடுப்பு அமைப்பு"],
+  "answer": "தடுப்பு அமைப்பு"
+},
+{
+  "id": 314,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "Where is the Gateway of India located?",
+  "options": ["Delhi", "Chennai", "Mumbai", "Kolkata"],
+  "answer": "Mumbai"
+},
+{
+  "id": 315,
+  "lang": "ta",
+  "subject": "tnpsc",
+  "difficulty": "easy",
+  "question": "தமிழ்நாட்டில் வானொலி நிலையம் முதன்முறையாக எங்கு அமைக்கப்பட்டது?",
+  "options": ["சென்னை", "மதுரை", "திருச்சி", "சேலம்"],
+  "answer": "சென்னை"
+},
+{
+  "id": 316,
+  "lang": "en",
+  "subject": "science",
+  "difficulty": "easy",
+  "question": "Which organ purifies blood in the human body?",
+  "options": ["Lungs", "Heart", "Liver", "Kidney"],
+  "answer": "Kidney"
+},
+{
+  "id": 317,
+  "lang": "ta",
+  "subject": "gk",
+  "difficulty": "medium",
+  "question": "இந்தியாவின் தேசிய தையல் இயந்திரம் என்றழைக்கப்படும் மாநிலம் எது?",
+  "options": ["பஞ்சாப்", "தமிழ்நாடு", "கேரளா", "மணிப்பூர்"],
+  "answer": "தமிழ்நாடு"
+},
+{
+  "id": 318,
+  "lang": "en",
+  "subject": "tnpsc",
+  "difficulty": "hard",
+  "question": "In which year was Tamil Nadu renamed from Madras State?",
+  "options": ["1969", "1967", "1956", "1970"],
+  "answer": "1969"
+},
+{
+  "id": 319,
+  "lang": "ta",
+  "subject": "science",
+  "difficulty": "medium",
+  "question": "உடல் வெப்பநிலையை கட்டுப்படுத்தும் உறுப்புகள் எவை?",
+  "options": ["மூளை", "இரத்தக்குழாய்கள்", "தோல்", "மூச்சு உறுப்பு"],
+  "answer": "தோல்"
+},
+{
+  "id": 320,
+  "lang": "en",
+  "subject": "gk",
+  "difficulty": "hard",
+  "question": "Who wrote the famous book 'Discovery of India'?",
+  "options": ["Gandhi", "Subhash Chandra Bose", "Nehru", "Dr. Ambedkar"],
+  "answer": "Nehru"
+}
+]
