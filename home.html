@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,4 +45,52 @@
     }
   </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App Home</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <h1>🎓 Welcome to Bilingual Quiz Platform</h1>
+  <p>Empowering students in Tamil & English</p>
+
+  <!-- ✨ 3D Lottie Animation -->
+  <div class="animation-section">
+    <lottie-player
+      src="https://assets6.lottiefiles.com/packages/lf20_jcikwtux.json"
+      background="transparent"
+      speed="1"
+      style="max-width: 300px; margin: 20px auto;"
+      loop autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- 👋 Personalized Welcome -->
+  <p id="activeUserMsg"></p>
+
+  <!-- 🔐 Navigation Buttons -->
+  <div class="nav-buttons">
+    <button onclick="location.href='login.html'">🔐 Login</button>
+    <button onclick="location.href='register.html'">📝 Register</button>
+  </div>
+
+  <!-- 📜 Footer -->
+  <footer>
+    <p>© 2025 Bilingual Quiz App. All rights reserved.</p>
+  </footer>
+
+  <!-- 💬 Welcome Script -->
+  <script>
+    const active = JSON.parse(localStorage.getItem("activeStudent"));
+    if (active) {
+      document.getElementById("activeUserMsg").textContent =
+        `👋 Welcome back, ${active.username}! Ready to continue your quiz journey?`;
+    }
+  </script>
+</body>
+>>>>>>> 030651a81660b80a266feed5ccabe495b89886c4
 </html>
