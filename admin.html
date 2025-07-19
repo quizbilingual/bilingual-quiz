@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🧠 Quiz Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .controls, form {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      margin: 8px 4px;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    #uploadStatus {
+      text-align: center;
+      font-weight: bold;
+      margin: 10px;
+    }
+    canvas {
+      display: block;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    .action-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: left;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      background: #f5f5f5;
+      z-index: 1;
+    }
+    .scroll-table {
+      max-height: 500px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👨‍💻 Quiz Admin Panel</h1>
+  <p id="adminWelcomeMsg">Welcome, admin!</p>
+
+  <div class="controls">
+    <input type="text" id="filterInput" placeholder="🔍 Filter..." />
+    <div class="action-buttons">
+      <button onclick="exportQuestions()">📄 Export .json</button>
+      <button onclick="clearAllQuestions()">🧹 Clear All Questions</button>
+      <input type="file" id="jsonUpload" />
+    </div>
+    <div class="scroll-table">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Subject</th>
+            <th>Difficulty</th>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody id="questionTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <form id="questionForm">
+    <h3>➕ Add a Question Manually</h3>
+    <input type="text" id="questionText" placeholder="Enter question" required />
+    <input type="text" id="optionA" placeholder="Option A" required />
+    <input type="text" id="optionB" placeholder="Option B" required />
+    <input type="text" id="optionC" placeholder="Option C" required />
+    <input type="text" id="optionD" placeholder="Option D" required />
+    <input type="text" id="correctAnswer" placeholder="Correct Answer" required />
+    <select id="language" required>
+      <option value="">Select Language</option>
+      <option value="en">English</option>
+      <option value="ta">Tamil</option>
+    </select>
+    <button type="submit">✅ Add Question</button>
+  </form>
+
+  <p id="uploadStatus"></p>
+
+  <canvas id="adminChart"></canvas>
+
+  <script>
+    // ✅ Auto load from questions.json if localStorage is empty
+    (function preloadQuestionsIfNeeded() {
+      const existing = JSON.parse(localStorage.getItem("questions") || "[]");
+      if (!existing.length) {
+        fetch("quiz_app/data/questions.json")
+          .then(res => res.json())
+          .then(data => {
+            localStorage.setItem("questions", JSON.stringify(data));
+            console.log("✅ 200 questions loaded into localStorage!");
+            location.reload();
+          })
+          .catch(err => console.error("❌ Failed to load questions.json", err));
+      }
+    })();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const questionTable = document.getElementById("questionTableBody");
+      const fileInput = document.getElementById("jsonUpload");
+      const filterInput = document.getElementById("filterInput");
+
+      let questions = JSON.parse(localStorage.getItem("questions")) || [];
+
+      function renderQuestions(data) {
+        questionTable.innerHTML = "";
+        if (!data.length) {
+          questionTable.innerHTML = "<tr><td colspan='5'>No questions found</td></tr>";
+          return;
+        }
+        data.forEach((q, index) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${index + 1}</td>
+            <td>${q.subject}</td>
+            <td>${q.difficulty}</td>
+            <td>${q.question}</td>
+            <td>${q.answer}</td>
+          `;
+          questionTable.appendChild(row);
+        });
+      }
+
+      renderQuestions(questions);
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file || !file.name.endsWith(".json")) {
+          alert("Please upload a valid .json file!");
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            const newQuestions = JSON.parse(event.target.result);
+            if (Array.isArray(newQuestions)) {
+              questions = [...questions, ...newQuestions];
+              localStorage.setItem("questions", JSON.stringify(questions));
+              renderQuestions(questions);
+              drawChart();
+              alert("✅ Questions uploaded successfully!");
+            } else {
+              alert("Invalid JSON format");
+            }
+          } catch (err) {
+            alert("Error parsing file!");
+            console.error(err);
+          }
+        };
+        reader.readAsText(file);
+      });
+
+      filterInput.addEventListener("input", () => {
+        const term = filterInput.value.toLowerCase();
+        const filtered = questions.filter(q =>
+          q.subject.toLowerCase().includes(term) ||
+          q.lang?.toLowerCase().includes(term) ||
+          q.difficulty.toLowerCase().includes(term) ||
+          q.question.toLowerCase().includes(term)
+        );
+        renderQuestions(filtered);
+      });
+
+      document.getElementById("questionForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const newQuestion = {
+          question: document.getElementById("questionText").value,
+          options: [
+            document.getElementById("optionA").value,
+            document.getElementById("optionB").value,
+            document.getElementById("optionC").value,
+            document.getElementById("optionD").value,
+          ],
+          answer: document.getElementById("correctAnswer").value,
+          lang: document.getElementById("language").value,
+          subject: "general",
+          difficulty: "medium"
+        };
+        questions.push(newQuestion);
+        localStorage.setItem("questions", JSON.stringify(questions));
+        renderQuestions(questions);
+        drawChart();
+        this.reset();
+        document.getElementById("uploadStatus").textContent = "✅ Question Added!";
+        document.getElementById("uploadStatus").style.color = "green";
+      });
+    });
+
+    function exportQuestions() {
+      const data = localStorage.getItem("questions") || "[]";
+      const blob = new Blob([data], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "questions.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function clearAllQuestions() {
+      if (confirm("Are you sure you want to delete all questions?")) {
+        localStorage.removeItem("questions");
+        document.getElementById("uploadStatus").textContent = "🗑️ All questions cleared!";
+        document.getElementById("uploadStatus").style.color = "red";
+        document.getElementById("questionTableBody").innerHTML = "";
+        drawChart();
+      }
+    }
+
+    function drawChart() {
+      const ctx = document.getElementById("adminChart").getContext("2d");
+      const existingChart = Chart.getChart(ctx);
+      if (existingChart) existingChart.destroy();
+      const questions = JSON.parse(localStorage.getItem("questions")) || [];
+      const tamil = questions.filter(q => q.lang === "ta").length;
+      const english = questions.filter(q => q.lang === "en").length;
+
+      new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Tamil", "English"],
+          datasets: [{
+            data: [tamil, english],
+            backgroundColor: ["#f39c12", "#3498db"]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: "bottom" } }
+        }
+      });
+    }
+
+    drawChart();
+  </script>
+</body>
+</html>
