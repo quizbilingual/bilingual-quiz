@@ -14,3 +14,19 @@ body {
  h1 {
     margin: 0 auto 20px;
  }
+ .header {
+  padding: 16px;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+body {
+  margin-top: 60px; /* ensures top content is visible */
+}
+
+.container {
+  overflow: visible;
+  padding-top: 40px;
+}
