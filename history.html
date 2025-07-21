@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your past quiz attempts on RapidQuiz. Bilingual, syllabus-wise history tracking." />
+  <meta name="keywords" content="TNPSC quiz history, RapidQuiz attempts, bilingual quiz tracker" />
+  <meta name="robots" content="index, follow" />
+  <title>My Quiz History – RapidQuiz</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📜 Quiz Attempt History</h1>
+    <p><strong>Student:</strong> <span id="userNameDisplay">--</span></p>
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Subject</th>
+          <th>Score</th>
+          <th>Total</th>
+          <th>Correct</th>
+          <th>Wrong</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button onclick="goHome()">🏠 Go to Home</button>
+  </div>
+
+  <script>
+    const student = JSON.parse(localStorage.getItem("activeStudent"));
+    const username = student?.email || "Guest";
+    document.getElementById("userNameDisplay").textContent = username;
+
+    const history = JSON.parse(localStorage.getItem("quizHistory")) || [];
+    const filteredHistory = history.filter(entry => entry.email === username);
+    const tbody = document.querySelector("#historyTable tbody");
+
+    if (filteredHistory.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7">No quiz attempts found ❌</td></tr>`;
+    } else {
+      filteredHistory.forEach((record, index) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${record.subject || "Unknown"}</td>
+          <td>${record.score}</td>
+          <td>${record.total}</td>
+          <td>${record.correct}</td>
+          <td>${record.wrong}</td>
+          <td>${record.timestamp}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,48 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Home - Bilingual Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TNPSC & school-level bilingual quiz app with Tamil–English support and syllabus filtering." />
+  <meta name="keywords" content="TNPSC quiz, bilingual quiz, Tamil quiz, English quiz, RapidQuiz, school exam, Group 1, Group 2, Group 4" />
+  <meta name="robots" content="index, follow" />
+  <title>Bilingual Quiz App</title>
   <link rel="stylesheet" href="style/main.css" />
+  <!-- Optional: Include if using lottie-player animations -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-  <div class="main-container">
-    <h1>🎓 Welcome to Bilingual Quiz Platform</h1>
+  <div class="main-container" align="center">
+    <h1>🎓 Bilingual Quiz Platform</h1>
     <p>Empowering students in Tamil & English</p>
+
+    <div class="animation-section" style="margin: 20px 0;">
+      <lottie-player
+        src="https://assets6.lottiefiles.com/packages/lf20_jcikwtux.json"
+        background="transparent"
+        speed="1"
+        style="max-width: 300px; margin: 0 auto;"
+        loop autoplay>
+      </lottie-player>
+    </div>
+
+    <p id="activeUserMsg" style="margin-top: 15px;"></p>
+
+    <div class="nav-buttons" style="margin-top: 20px;">
+      <button onclick="location.href='login.html'">🔐 Login</button>
+      <button onclick="location.href='register.html'">📝 Register</button>
+      <button onclick="location.href='admin.html'">🛠 Admin Panel</button>
+    </div>
+
+    <footer style="margin-top: 40px;">
+      <p>© 2025 Bilingual Quiz App. All rights reserved.</p>
+    </footer>
   </div>
-
-  <div class="animation-section">
-    <lottie-player
-      src="https://assets6.lottiefiles.com/packages/lf20_jcikwtux.json"
-      background="transparent"
-      speed="1"
-      style="max-width: 300px; margin: 20px auto;"
-      loop autoplay>
-    </lottie-player>
-  </div>
-
-  <p id="activeUserMsg"></p>
-
-  <div class="nav-buttons" align="center">
-    <button onclick="location.href='login.html'">🔐 Login</button>
-    <button onclick="location.href='register.html'">📝 Register</button>
-    <button onclick="location.href='admin.html'">🛠 Admin Panel</button>
-  </div>
-
-  <footer align="center" style="margin-top: 40px;">
-    <p>© 2025 Bilingual Quiz App</p>
-  </footer>
 
   <script>
-    let activeTab;
+    let activeStudent;
     try {
-      active = JSON.parse(localStorage.getItem("activeStudent"));
-    } catch (e) {
-      active = null;
+      activeStudent = JSON.parse(localStorage.getItem("activeStudent"));
+    } catch (err) {
+      activeStudent = null;
     }
-    if (active && active.username) {
+
+    if (activeStudent && activeStudent.username) {
       window.location.href = "rapidquiz.html";
     } else {
       document.getElementById("activeUserMsg").textContent =
