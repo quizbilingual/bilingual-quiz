@@ -7,6 +7,28 @@ let timer;
 let timeLeft = 15;
 let questionCount = 0;
 const MAX_QUESTIONS = 20;
+const subjectMap = {
+  "Tamil": "tamil",
+  "English": "english",
+  "Social": "social",
+  "GK": "gk",
+  "Computer Science": "computer",
+  "TNPSC Group 1": "tnpsc",
+  "TNPSC Group 2": "tnpsc2",
+  "TNPSC Group 3": "tnpsc3",
+  "TNPSC Group 4": "tnpsc4"
+};
+
+const difficultyMap = {
+  "Easy": "easy",
+  "Medium": "medium",
+  "Hard": "hard"
+};
+
+const langMap = {
+  "English": "en",
+  "Tamil": "ta"
+};
 
 const user = JSON.parse(localStorage.getItem("activeStudent"))?.email || "Guest";
 
@@ -42,9 +64,9 @@ function fetchQuestions() {
 }
 
 function applyFilters() {
-  const lang = langSelect?.value || "all";
-  const subject = subjectSelect?.value || "all";
-  const difficulty = difficultySelect?.value || "all";
+  const lang = langMap[langSelect?.value] || "all";
+  const subject = subjectMap[subjectSelect?.value] || "all";
+  const difficulty = difficultyMap[difficultySelect?.value] || "all";
 
   filteredQuestions = allQuestions.filter(
     q =>
