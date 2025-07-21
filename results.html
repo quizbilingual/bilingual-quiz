@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RapidQuiz result summary with score breakdown and retry option." />
+  <meta name="keywords" content="TNPSC quiz results, bilingual quiz score, RapidQuiz leaderboard" />
+  <meta name="robots" content="index, follow" />
+  <title>Quiz Results – RapidQuiz</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">Quiz Completed ✅</h1>
+
+    <div class="user-info">
+      <p><strong>Username:</strong> <span id="userNameDisplay">--</span></p>
+      <p><strong>Date:</strong> <span id="quizDate">--</span></p>
+    </div>
+
+    <div class="score-card">
+      <p><strong>Your Score:</strong> <span id="score">--</span> / <span id="total">--</span></p>
+      <p><strong>Correct Answers:</strong> <span id="correctCount">--</span></p>
+      <p><strong>Wrong Answers:</strong> <span id="wrongCount">--</span></p>
+    </div>
+
+    <div class="actions">
+      <button onclick="retryQuiz()">🔁 Retry Quiz</button>
+      <button onclick="goHome()">🏠 Go to Home</button>
+    </div>
+  </div>
+
+  <script src="scripts/results.js"></script>
+</body>
+</html>
