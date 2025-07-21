@@ -7,6 +7,7 @@ let timer;
 let timeLeft = 15;
 let questionCount = 0;
 const MAX_QUESTIONS = 20;
+
 const subjectMap = {
   "Tamil": "tamil",
   "English": "english",
@@ -32,7 +33,6 @@ const langMap = {
 
 const user = JSON.parse(localStorage.getItem("activeStudent"))?.email || "Guest";
 
-// Corrected element IDs matching your HTML
 const langSelect = document.getElementById("langFilter");
 const subjectSelect = document.getElementById("subjectFilter");
 const difficultySelect = document.getElementById("difficultyFilter");
@@ -65,16 +65,32 @@ function fetchQuestions() {
 
 function applyFilters() {
   const lang = langMap[langSelect?.value] || "all";
-  const subject = subjectMap[subjectSelect?.value] || "all";
   const difficulty = difficultyMap[difficultySelect?.value] || "all";
+  const selectedSubject = subjectSelect?.value || "all";
 
-  filteredQuestions = allQuestions.filter(
-    q =>
-      (lang === "all" || q.lang === lang) &&
-      (subject === "all" || q.subject === subject) &&
-      (difficulty === "all" || q.difficulty === difficulty) &&
-      !usedIds.includes(q.id)
-  );
+  const subjectSynonyms = {
+    "Tamil": ["Tamil", "தமிழ்", "ta"],
+    "English": ["English", "en"],
+    "Social": ["Social", "Social Science"],
+    "GK": ["GK", "General Knowledge"],
+    "Computer Science": ["Computer Science", "Computer", "CS", "IT"],
+    "TNPSC Group 1": ["TNPSC Group 1", "Group I", "Group 1"],
+    "TNPSC Group 2": ["TNPSC Group 2", "Group II", "Group 2"],
+    "TNPSC Group 3": ["TNPSC Group 3", "Group III", "Group 3"],
+    "TNPSC Group 4": ["TNPSC Group 4", "Group IV", "Group 4"]
+  };
+
+  filteredQuestions = allQuestions.filter(q => {
+    const matchLang = lang === "all" || q.lang === lang;
+    const matchDifficulty = difficulty === "all" || q.difficulty === difficulty;
+    const matchSubject =
+      selectedSubject === "all" ||
+      subjectSynonyms[selectedSubject]?.some(syn =>
+        q.subject?.toLowerCase().includes(syn.toLowerCase())
+      );
+    const notUsed = !usedIds.includes(q.id);
+    return matchLang && matchDifficulty && matchSubject && notUsed;
+  });
 
   questionCount = 0;
   score = 0;
@@ -152,6 +168,16 @@ function loadNextQuestion() {
   updateScore();
 }
 
+// ✅ Play sound helper
+function playSound(type) {
+  try {
+    const audio = document.getElementById(type === "correct" ? "correctSound" : "wrongSound");
+    audio?.play();
+  } catch (e) {
+    console.warn(`${type} sound error:`, e);
+  }
+}
+
 function checkAnswer(selected) {
   clearInterval(timer);
   const isCorrect = selected === currentQuestion.answer;
@@ -160,11 +186,11 @@ function checkAnswer(selected) {
 
   if (isCorrect) {
     score++;
-    document.getElementById("correctSound")?.play();
+    playSound("correct");
     result.textContent = "✅ Correct!";
     result.style.color = "green";
   } else {
-    document.getElementById("wrongSound")?.play();
+    playSound("wrong");
     result.textContent = `❌ Wrong! Answer: ${currentQuestion.answer}`;
     result.style.color = "red";
   }
@@ -182,7 +208,7 @@ function startTimer() {
     if (timerEl) timerEl.textContent = `⏱️ Time Left: ${timeLeft}s`;
     if (timeLeft <= 0) {
       clearInterval(timer);
-      checkAnswer("⏳"); // treat as wrong/no answer
+      checkAnswer("⏳"); // treat as wrong
     }
   }, 1000);
 }
@@ -267,7 +293,6 @@ function updateLeaderboard() {
     });
 }
 
-// Filters: reload quiz on change
 langSelect?.addEventListener("change", resetQuiz);
 subjectSelect?.addEventListener("change", resetQuiz);
 difficultySelect?.addEventListener("change", resetQuiz);
