@@ -2,6 +2,11 @@
 
 An interactive TNPSC & school-level quiz platform built with bilingual support, dynamic filtering, and full syllabus coverage — perfect for students preparing for competitive exams.
 
+## 🚀 Live Demo  
+🔗 [Click here to try the quiz](https://quizbilingual.github.io/bilingual-quiz/)
+
+---
+
 ## 🚀 Features
 - Subject-wise & difficulty-based filtering
 - Tamil–English bilingual questions
@@ -37,4 +42,3 @@ Push to GitHub and let your work shine — this README will display at the top o
 ---
 
 Made with ❤️ by jazeel — syllabus master & platform builder 🔥
-
