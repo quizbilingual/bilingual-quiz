@@ -2,36 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Quiz Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RapidQuiz result summary with score breakdown and retry option." />
-  <meta name="keywords" content="TNPSC quiz results, bilingual quiz score, RapidQuiz leaderboard" />
-  <meta name="robots" content="index, follow" />
-  <title>Quiz Results – RapidQuiz</title>
-  <link rel="stylesheet" href="style/main.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 10px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+    }
+    th {
+      background-color: #222;
+    }
+    .badge {
+      font-weight: bold;
+      color: gold;
+    }
+    .actions {
+      margin-top: 1.5rem;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="header">Quiz Completed ✅</h1>
+  <h1>🎉 Quiz Completed!</h1>
+  <h2 id="summary"></h2>
 
-    <div class="user-info">
-      <p><strong>Username:</strong> <span id="userNameDisplay">--</span></p>
-      <p><strong>Date:</strong> <span id="quizDate">--</span></p>
-      <p><strong>Subject:</strong> <span id="quizSubject">--</span></p>
-<p><strong>Language:</strong> <span id="quizLang">--</span></p>
-    </div>
-
-    <div class="score-card">
-      <p><strong>Your Score:</strong> <span id="score">--</span> / <span id="total">--</span></p>
-      <p><strong>Correct Answers:</strong> <span id="correctCount">--</span></p>
-      <p><strong>Wrong Answers:</strong> <span id="wrongCount">--</span></p>
-    </div>
-
-    <div class="actions">
-      <button onclick="retryQuiz()">🔁 Retry Quiz</button>
-      <button onclick="goHome()">🏠 Go to Home</button>
-    </div>
+  <div class="actions">
+    <button onclick="exportCSV()">📄 Export Leaderboard</button>
+    <button onclick="shareResult()">📤 Share Result</button>
+    <button onclick="location.href='rapidquiz.html'">🔁 Retry Quiz</button>
+    <button onclick="logout()">🚪 Logout</button>
   </div>
 
-  <script src="scripts/results.js"></script>
+  <h2>🏆 Leaderboard</h2>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Score</th><th>Time</th><th>Badge</th></tr>
+    </thead>
+    <tbody id="leaderboardBody"></tbody>
+  </table>
+
+  <script>
+  const name = localStorage.getItem("finalUser") || "Player";
+  const score = parseInt(localStorage.getItem("finalScore") || "0");
+  const time = localStorage.getItem("finalTime") || new Date().toLocaleString();
+  const badge = score >= 13 ? '🥇 Gold' : score >= 10 ? '🥈 Silver' : score >= 5 ? '🥉 Bronze' : '🎓 Participant';
+
+  document.getElementById("summary").textContent = `✅ ${name}, your score is ${score}/15 on ${time}. Badge: ${badge}`;
+
+  // ✅ FIX: Ensure leaderboard is an object
+  let board = {};
+  try {
+    const parsed = JSON.parse(localStorage.getItem("rapidquiz_leaderboard"));
+    if (parsed && typeof parsed === "object") board = parsed;
+  } catch (e) {
+    board = {};
+  }
+
+  // ✅ Ensure board[name] is an array
+  if (!Array.isArray(board[name])) {
+    board[name] = [];
+  }
+
+  board[name].push({ score, timestamp: time });
+  board[name] = board[name].sort((a, b) => b.score - a.score).slice(0, 5);
+  localStorage.setItem("rapidquiz_leaderboard", JSON.stringify(board));
+
+  // 🖊 Render Leaderboard Table
+  const tbody = document.getElementById("leaderboardBody");
+  Object.entries(board).forEach(([user, entries]) => {
+    entries.forEach(entry => {
+      const badgeText = entry.score >= 13 ? '🥇 Gold' : entry.score >= 10 ? '🥈 Silver' : entry.score >= 5 ? '🥉 Bronze' : '🎓 Participant';
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${user}</td><td>${entry.score}</td><td>${entry.timestamp}</td><td class="badge">${badgeText}</td>`;
+      tbody.appendChild(row);
+    });
+  });
+
+  function exportCSV() {
+    let csv = "Name,Score,Time\n";
+    Object.entries(board).forEach(([user, entries]) => {
+      entries.forEach(entry => {
+        csv += `${user},${entry.score},${entry.timestamp}\n`;
+      });
+    });
+    const blob = new Blob([csv], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "leaderboard.csv";
+    a.click();
+  }
+
+  function shareResult() {
+    const msg = encodeURIComponent(`🎉 I scored ${score}/15 in the quiz! Try it now.`);
+    const url = `https://wa.me/?text=${msg}`;
+    window.open(url, "_blank");
+  }
+</script>
 </body>
 </html>

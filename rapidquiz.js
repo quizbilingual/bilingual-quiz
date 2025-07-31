@@ -1,57 +1,52 @@
-let allQuestions = [];
-let filteredQuestions = [];
-let currentQuestion = null;
-let usedIds = [];
-let score = 0;
-let timer;
-let timeLeft = 15;
-let questionCount = 0;
-const MAX_QUESTIONS = 20;
+// 🔊 Sound effects
+const correctSound = new Audio("sounds/correct.mp3");
+const wrongSound = new Audio("sounds/wrong.mp3");
 
-const subjectMap = {
-  "Tamil": "tamil",
-  "English": "english",
-  "Social": "social",
-  "GK": "gk",
-  "Computer Science": "computer",
-  "TNPSC Group 1": "tnpsc",
-  "TNPSC Group 2": "tnpsc2",
-  "TNPSC Group 3": "tnpsc3",
-  "TNPSC Group 4": "tnpsc4"
-};
+// 🔃 Shuffle helper
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
-const difficultyMap = {
-  "Easy": "easy",
-  "Medium": "medium",
-  "Hard": "hard"
-};
-
-const langMap = {
-  "English": "en",
-  "Tamil": "ta"
-};
-
-const user = JSON.parse(localStorage.getItem("activeStudent"))?.email || "Guest";
-
-const langSelect = document.getElementById("langFilter");
+// 🔗 DOM references
 const subjectSelect = document.getElementById("subjectFilter");
 const difficultySelect = document.getElementById("difficultyFilter");
+const langSelect = document.getElementById("langFilter");
+const user = JSON.parse(localStorage.getItem("activeStudent"))?.email || "Guest";
 
+// 🧠 State
+let allQuestions = [];
+let filteredQuestions = [];
+let usedIds = [];
+let currentQuestion = null;
+let score = 0;
+let questionCount = 0;
+let timeLeft = 15;
+let timer;
+const MAX_QUESTIONS = 15;
+
+// 🌙 Always dark mode
+document.body.classList.add("dark");
+localStorage.setItem("theme", "dark");
+
+// 🔑 Used ID Key based on user + subject
 function getUsedIdsKey() {
-  const subject = subjectSelect?.value || "all";
-  return `usedQuestions_${user}_${subject}`;
+  const subjectCode = subjectSelect?.value?.trim().toLowerCase().replace(/\s+/g, "") || "all";
+  return `usedQuestions_${user}_${subjectCode}`;
 }
 
 function loadUsedIds() {
-  const key = getUsedIdsKey();
-  usedIds = JSON.parse(localStorage.getItem(key) || "[]");
+  usedIds = JSON.parse(localStorage.getItem(getUsedIdsKey()) || "[]");
 }
 
 function saveUsedIds() {
-  const key = getUsedIdsKey();
-  localStorage.setItem(key, JSON.stringify(usedIds));
+  localStorage.setItem(getUsedIdsKey(), JSON.stringify(usedIds));
 }
 
+// 📦 Load questions
 function fetchQuestions() {
   fetch("data/questions.json")
     .then(res => res.json())
@@ -63,80 +58,51 @@ function fetchQuestions() {
     .catch(err => console.error("❌ Failed to load questions:", err));
 }
 
+// 🧹 Apply filters
 function applyFilters() {
-  const lang = langMap[langSelect?.value] || "all";
-  const difficulty = difficultyMap[difficultySelect?.value] || "all";
-  const selectedSubject = subjectSelect?.value || "all";
+  const langCode = langSelect?.value?.trim().toLowerCase() || "all";
+  const difficultyCode = difficultySelect?.value?.trim().toLowerCase() || "all";
+  const subjectCode = subjectSelect?.value?.trim().toLowerCase().replace(/\s+/g, "") || "all";
 
-  const subjectSynonyms = {
-    "Tamil": ["Tamil", "தமிழ்", "ta"],
-    "English": ["English", "en"],
-    "Social": ["Social", "Social Science"],
-    "GK": ["GK", "General Knowledge"],
-    "Computer Science": ["Computer Science", "Computer", "CS", "IT"],
-    "TNPSC Group 1": ["TNPSC Group 1", "Group I", "Group 1"],
-    "TNPSC Group 2": ["TNPSC Group 2", "Group II", "Group 2"],
-    "TNPSC Group 3": ["TNPSC Group 3", "Group III", "Group 3"],
-    "TNPSC Group 4": ["TNPSC Group 4", "Group IV", "Group 4"]
-  };
+  loadUsedIds();
 
-  filteredQuestions = allQuestions.filter(q => {
-    const matchLang = lang === "all" || q.lang === lang;
-    const matchDifficulty = difficulty === "all" || q.difficulty === difficulty;
-    const matchSubject =
-      selectedSubject === "all" ||
-      subjectSynonyms[selectedSubject]?.some(syn =>
-        q.subject?.toLowerCase().includes(syn.toLowerCase())
-      );
+  const candidates = allQuestions.filter(q => {
+    const qLang = q.lang?.trim().toLowerCase();
+    const qDiff = q.difficulty?.trim().toLowerCase();
+    const qSubj = q.subject?.trim().toLowerCase().replace(/\s+/g, "");
+
+    const matchLang = langCode === "all" || qLang === langCode;
+    const matchDiff = difficultyCode === "all" || qDiff === difficultyCode;
+    const matchSubj = subjectCode === "all" || qSubj === subjectCode;
     const notUsed = !usedIds.includes(q.id);
-    return matchLang && matchDifficulty && matchSubject && notUsed;
+
+    return matchLang && matchDiff && matchSubj && notUsed;
   });
 
-  questionCount = 0;
+  filteredQuestions = shuffle(candidates).slice(0, MAX_QUESTIONS);
   score = 0;
+  questionCount = 0;
   updateScore();
-  const resultEl = document.getElementById("result");
-  if (resultEl) resultEl.textContent = "";
+  document.getElementById("result").textContent = "";
 
   if (filteredQuestions.length === 0) {
-    const questionEl = document.getElementById("question");
-    if (questionEl)
-      questionEl.textContent = "🎉 You completed all available questions for this filter!";
-    const optionsEl = document.getElementById("options");
-    if (optionsEl) optionsEl.innerHTML = "";
-    triggerConfetti();
-    saveHistory();
-    updateLeaderboard();
+    document.getElementById("question").textContent = "😕 No questions found for this filter.";
+    document.getElementById("options").innerHTML = "";
     return;
   }
 
   loadNextQuestion();
 }
 
+// 🎯 Load next question
 function getNextQuestion() {
-  if (filteredQuestions.length === 0) return null;
-  const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-  const question = filteredQuestions.splice(randomIndex, 1)[0];
-  usedIds.push(question.id);
-  saveUsedIds();
-  return question;
-}
-
-function shuffleOptions(question) {
-  const opts = question.options.slice();
-  if (!opts.includes(question.answer)) opts.push(question.answer);
-  for (let i = opts.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [opts[i], opts[j]] = [opts[j], opts[i]];
-  }
-  return opts;
+  return filteredQuestions.shift();
 }
 
 function loadNextQuestion() {
   clearInterval(timer);
   timeLeft = 15;
-  const timerEl = document.getElementById("timer");
-  if (timerEl) timerEl.textContent = `⏱️ Time Left: ${timeLeft}s`;
+  document.getElementById("timer").textContent = `⏱️ Time Left: ${timeLeft}s`;
 
   if (questionCount >= MAX_QUESTIONS || filteredQuestions.length === 0) {
     endQuiz();
@@ -144,23 +110,23 @@ function loadNextQuestion() {
   }
 
   currentQuestion = getNextQuestion();
-  if (!currentQuestion) {
-    endQuiz();
+  questionCount++;
+
+  if (!currentQuestion || !currentQuestion.question) {
+    document.getElementById("question").textContent = "❌ Failed to load question!";
+    document.getElementById("options").innerHTML = "";
     return;
   }
 
-  questionCount++;
-
-  const qEl = document.getElementById("question");
+  document.getElementById("question").textContent = currentQuestion.question;
   const optionsEl = document.getElementById("options");
-  if (qEl) qEl.textContent = currentQuestion.question;
-  if (optionsEl) optionsEl.innerHTML = "";
+  optionsEl.innerHTML = "";
 
   shuffleOptions(currentQuestion).forEach(opt => {
     const btn = document.createElement("button");
     btn.textContent = opt;
     btn.classList.add("option-btn");
-    btn.onclick = () => checkAnswer(opt);
+    btn.onclick = () => checkAnswer(btn);
     optionsEl.appendChild(btn);
   });
 
@@ -168,135 +134,104 @@ function loadNextQuestion() {
   updateScore();
 }
 
-// ✅ Play sound helper
-function playSound(type) {
-  try {
-    const audio = document.getElementById(type === "correct" ? "correctSound" : "wrongSound");
-    audio?.play();
-  } catch (e) {
-    console.warn(`${type} sound error:`, e);
-  }
+// 🔄 Shuffle options
+function shuffleOptions(question) {
+  const opts = [...question.options];
+  if (!opts.includes(question.answer)) opts.push(question.answer);
+  return shuffle(opts);
 }
 
-function checkAnswer(selected) {
-  clearInterval(timer);
-  const isCorrect = selected === currentQuestion.answer;
-  const result = document.getElementById("result");
-  if (!result) return;
-
-  if (isCorrect) {
-    score++;
-    playSound("correct");
-    result.textContent = "✅ Correct!";
-    result.style.color = "green";
-  } else {
-    playSound("wrong");
-    result.textContent = `❌ Wrong! Answer: ${currentQuestion.answer}`;
-    result.style.color = "red";
-  }
-
-  setTimeout(() => {
-    if (result) result.textContent = "";
-    loadNextQuestion();
-  }, 1000);
-}
-
+// ⏱️ Start countdown
 function startTimer() {
   timer = setInterval(() => {
     timeLeft--;
-    const timerEl = document.getElementById("timer");
-    if (timerEl) timerEl.textContent = `⏱️ Time Left: ${timeLeft}s`;
+    document.getElementById("timer").textContent = `⏱️ Time Left: ${timeLeft}s`;
     if (timeLeft <= 0) {
       clearInterval(timer);
-      checkAnswer("⏳"); // treat as wrong
+      checkAnswer({ textContent: "⏳" });
     }
   }, 1000);
 }
 
-function updateScore() {
-  const scoreEl = document.getElementById("score");
-  if (scoreEl) scoreEl.textContent = `Score: ${score} / ${questionCount}`;
+// ✅ Check answer
+function checkAnswer(selectedOption) {
+  const selectedAnswer = selectedOption.textContent;
+  const correctAnswer = currentQuestion.answer;
+  const options = document.querySelectorAll(".option-btn");
+  options.forEach(option => option.style.pointerEvents = "none");
+
+  if (selectedAnswer === correctAnswer) {
+    score++;
+    selectedOption.classList.add("correct");
+    correctSound.currentTime = 0;
+    correctSound.play();
+  } else {
+    selectedOption.classList.add("wrong");
+    options.forEach(opt => {
+      if (opt.textContent === correctAnswer) opt.classList.add("correct");
+    });
+    wrongSound.currentTime = 0;
+    wrongSound.play();
+  }
+
+  usedIds.push(currentQuestion.id);
+  saveUsedIds();
+  updateScore();
+
+  setTimeout(() => {
+    loadNextQuestion();
+  }, 1000);
 }
 
+// 📊 Update score
+function updateScore() {
+  document.getElementById("score").textContent = `Score: ${score} / ${questionCount}`;
+}
+
+// 🛑 End quiz
 function endQuiz() {
   clearInterval(timer);
-  const qEl = document.getElementById("question");
-  if (qEl)
-    qEl.textContent = `✅ Quiz Completed! Your score: ${score} / ${questionCount}`;
-  const optionsEl = document.getElementById("options");
-  if (optionsEl) optionsEl.innerHTML = "";
 
-  triggerConfetti();
-  saveHistory();
-  updateLeaderboard();
+  const entry = {
+    name: user,
+    score: score,
+    time: new Date().toLocaleString()
+  };
 
-  const restartBtn = document.getElementById("restartBtn");
-  if (restartBtn) restartBtn.style.display = "inline-block";
+  let history = JSON.parse(localStorage.getItem("quizHistory") || "[]");
+  if (!Array.isArray(history)) history = [];
+  history.unshift(entry);
+  localStorage.setItem("quizHistory", JSON.stringify(history.slice(0, 5)));
+
+  let leaderboard = JSON.parse(localStorage.getItem("quizLeaderboard") || "[]");
+  if (!Array.isArray(leaderboard)) leaderboard = [];
+  leaderboard.push(entry);
+  leaderboard.sort((a, b) => b.score - a.score || a.time.localeCompare(b.time));
+  localStorage.setItem("quizLeaderboard", JSON.stringify(leaderboard.slice(0, 10)));
+
+  localStorage.setItem("finalScore", score);
+  localStorage.setItem("finalUser", user);
+  localStorage.setItem("finalTime", new Date().toLocaleString());
+
+  window.location.href = "results.html";
 }
 
+// 🔄 Reset
 function resetQuiz() {
   localStorage.removeItem(getUsedIdsKey());
   loadUsedIds();
   applyFilters();
-  const restartBtn = document.getElementById("restartBtn");
-  if (restartBtn) restartBtn.style.display = "none";
+  document.getElementById("restartBtn").style.display = "none";
   score = 0;
   questionCount = 0;
   updateScore();
-  const resultEl = document.getElementById("result");
-  if (resultEl) resultEl.textContent = "";
+  document.getElementById("result").textContent = "";
 }
 
-function triggerConfetti() {
-  if (typeof confetti === "function") {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-    });
-  }
-}
+// 🔘 Filter listeners
+[langSelect, subjectSelect, difficultySelect].forEach(sel => {
+  sel.addEventListener("change", applyFilters);
+});
 
-function saveHistory() {
-  const historyKey = `rapidquiz_${user}_history`;
-  const old = JSON.parse(localStorage.getItem(historyKey) || "[]");
-  old.push({ date: new Date().toLocaleString(), score });
-  localStorage.setItem(historyKey, JSON.stringify(old.slice(-5)));
-
-  const list = document.getElementById("historyList");
-  if (list) {
-    list.innerHTML = "";
-    old.slice(-5).reverse().forEach(item => {
-      const li = document.createElement("li");
-      li.textContent = `${item.date} ➤ ${item.score}`;
-      list.appendChild(li);
-    });
-  }
-}
-
-function updateLeaderboard() {
-  const board = JSON.parse(localStorage.getItem("rapidquiz_leaderboard") || "{}");
-  board[user] = (board[user] || 0) + score;
-  localStorage.setItem("rapidquiz_leaderboard", JSON.stringify(board));
-
-  const tbody = document.getElementById("leaderboardBody");
-  if (!tbody) return;
-  tbody.innerHTML = "";
-
-  Object.entries(board)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
-    .forEach(([name, sc]) => {
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${name}</td><td>${sc}</td>`;
-      tbody.appendChild(row);
-    });
-}
-
-langSelect?.addEventListener("change", resetQuiz);
-subjectSelect?.addEventListener("change", resetQuiz);
-difficultySelect?.addEventListener("change", resetQuiz);
-
-document.getElementById("restartBtn")?.addEventListener("click", resetQuiz);
-
+// 🚀 Init
 fetchQuestions();

@@ -4,13 +4,23 @@ const total = localStorage.getItem("total") || 10;
 const correct = localStorage.getItem("correct") || 0;
 const wrong = localStorage.getItem("wrong") || 0;
 
-// 🧑‍🎓 Fetch username
-const username =
-  JSON.parse(localStorage.getItem("activeStudent"))?.email ||
-  localStorage.getItem("username") ||
-  "Guest";
+// 🧑‍🎓 Fetch username (prefer activeStudent, fallback to generic)
+let username = "Guest";
+const student = localStorage.getItem("activeStudent");
+if (student) {
+  try {
+    const parsedStudent = JSON.parse(student);
+    if (parsedStudent?.email) {
+      username = parsedStudent.email;
+    }
+  } catch (e) {
+    console.warn("Invalid student format", e);
+  }
+} else {
+  username = localStorage.getItem("username") || "Guest";
+}
 
-// 📅 Add optional timestamp
+// 📅 Format timestamp
 const now = new Date();
 const formattedTime = now.toLocaleString();
 
